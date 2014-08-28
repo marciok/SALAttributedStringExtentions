@@ -54,7 +54,7 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
         return nil;
     }
     
-    UIImage *imagePlaceholder = [self.delegate imagePlaceholder];
+    UIImage *imagePlaceholder = [self.delegate respondsToSelector:@selector(imagePlaceholder)] ? [self.delegate imagePlaceholder] : nil;
     
     NSDictionary *attributedStringAndRanges = [attributedString addImagePlaceholder:imagePlaceholder forImagesURL:self.imagesURL limitingTextAttachmentHeight:self.imageHeightLimit withTextAttachmentBackgroundColor:self.textAttachmentBackgroundColor];
     

@@ -11,9 +11,11 @@
 
 @protocol SALAttributedStringDelegate <NSObject>
 
-@required
+@optional
 
 - (UIImage *)imagePlaceholder;
+
+@required
 
 - (void)textAttachmentDownloaded:(SALResizableTextAttachment *)textAttachment inRange:(NSRange)range;
 
