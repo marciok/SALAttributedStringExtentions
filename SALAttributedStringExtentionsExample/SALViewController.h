@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SALAttributedStringExtensions.h"
 
-@interface SALViewController : UIViewController
+@interface SALViewController : UIViewController <SALAttributedStringDelegate>
 
 @end

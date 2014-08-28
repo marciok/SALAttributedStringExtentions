@@ -22,6 +22,14 @@
 		1219520219ADD06300B4959E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951E119ADD06300B4959E /* UIKit.framework */; };
 		1219520A19ADD06300B4959E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1219520819ADD06300B4959E /* InfoPlist.strings */; };
 		1219520C19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1219520B19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m */; };
+		1219521D19ADF67B00B4959E /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1219521C19ADF67B00B4959E /* placeholder.jpg */; };
+		12D3172519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */; };
+		12D3172619AF728400B3E5EA /* SALAttributedStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171819AF728400B3E5EA /* SALAttributedStringExtensions.m */; };
+		12D3172719AF728400B3E5EA /* SALHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171B19AF728400B3E5EA /* SALHTMLParser.m */; };
+		12D3172819AF728400B3E5EA /* SALImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171E19AF728400B3E5EA /* SALImageDownloader.m */; };
+		12D3172919AF728400B3E5EA /* SALResizableTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */; };
+		12D3172A19AF728400B3E5EA /* UIImage+SALImageResizeToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */; };
+		F982E08082234B55A0231E27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAA894D8FFA41A1B7AB4DAD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,21 @@
 		1219520719ADD06300B4959E /* SALAttributedStringExtentionsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringExtentionsExampleTests-Info.plist"; sourceTree = "<group>"; };
 		1219520919ADD06300B4959E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1219520B19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtentionsExampleTests.m; sourceTree = "<group>"; };
+		1219521C19ADF67B00B4959E /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = placeholder.jpg; path = ../../../../Desktop/placeholder.jpg; sourceTree = "<group>"; };
+		12D3171419AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+SALAttributedStringCustomAttributes.h"; sourceTree = "<group>"; };
+		12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+SALAttributedStringCustomAttributes.m"; sourceTree = "<group>"; };
+		12D3171719AF728400B3E5EA /* SALAttributedStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALAttributedStringExtensions.h; sourceTree = "<group>"; };
+		12D3171819AF728400B3E5EA /* SALAttributedStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtensions.m; sourceTree = "<group>"; };
+		12D3171A19AF728400B3E5EA /* SALHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALHTMLParser.h; sourceTree = "<group>"; };
+		12D3171B19AF728400B3E5EA /* SALHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALHTMLParser.m; sourceTree = "<group>"; };
+		12D3171D19AF728400B3E5EA /* SALImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALImageDownloader.h; sourceTree = "<group>"; };
+		12D3171E19AF728400B3E5EA /* SALImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALImageDownloader.m; sourceTree = "<group>"; };
+		12D3172019AF728400B3E5EA /* SALResizableTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALResizableTextAttachment.h; sourceTree = "<group>"; };
+		12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALResizableTextAttachment.m; sourceTree = "<group>"; };
+		12D3172319AF728400B3E5EA /* UIImage+SALImageResizeToFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SALImageResizeToFit.h"; sourceTree = "<group>"; };
+		12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SALImageResizeToFit.m"; sourceTree = "<group>"; };
+		7FAA894D8FFA41A1B7AB4DAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +88,7 @@
 				121951E019ADD06300B4959E /* CoreGraphics.framework in Frameworks */,
 				121951E219ADD06300B4959E /* UIKit.framework in Frameworks */,
 				121951DE19ADD06200B4959E /* Foundation.framework in Frameworks */,
+				F982E08082234B55A0231E27 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +108,12 @@
 		121951D119ADD06200B4959E = {
 			isa = PBXGroup;
 			children = (
+				1219521519ADD08F00B4959E /* SALAttributedStringExtensions */,
 				121951E319ADD06300B4959E /* SALAttributedStringExtentionsExample */,
 				1219520519ADD06300B4959E /* SALAttributedStringExtentionsExampleTests */,
 				121951DC19ADD06200B4959E /* Frameworks */,
 				121951DB19ADD06200B4959E /* Products */,
+				DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +133,7 @@
 				121951DF19ADD06300B4959E /* CoreGraphics.framework */,
 				121951E119ADD06300B4959E /* UIKit.framework */,
 				121951FF19ADD06300B4959E /* XCTest.framework */,
+				7FAA894D8FFA41A1B7AB4DAD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +141,7 @@
 		121951E319ADD06300B4959E /* SALAttributedStringExtentionsExample */ = {
 			isa = PBXGroup;
 			children = (
+				1219521C19ADF67B00B4959E /* placeholder.jpg */,
 				121951EC19ADD06300B4959E /* SALAppDelegate.h */,
 				121951ED19ADD06300B4959E /* SALAppDelegate.m */,
 				121951EF19ADD06300B4959E /* Main_iPhone.storyboard */,
@@ -155,6 +183,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1219521519ADD08F00B4959E /* SALAttributedStringExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				12D3171319AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes */,
+				12D3171619AF728400B3E5EA /* SALAttributedStringExtensions */,
+				12D3171919AF728400B3E5EA /* SALHTMLParser */,
+				12D3171C19AF728400B3E5EA /* SALImageDownloader */,
+				12D3171F19AF728400B3E5EA /* SALResizableTextAttachment */,
+				12D3172219AF728400B3E5EA /* UIImage+SALImageResizeToFit */,
+			);
+			path = SALAttributedStringExtensions;
+			sourceTree = "<group>";
+		};
+		12D3171319AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes */ = {
+			isa = PBXGroup;
+			children = (
+				12D3171419AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.h */,
+				12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */,
+			);
+			path = "NSAttributedString+SALAttributedStringCustomAttributes";
+			sourceTree = "<group>";
+		};
+		12D3171619AF728400B3E5EA /* SALAttributedStringExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				12D3171719AF728400B3E5EA /* SALAttributedStringExtensions.h */,
+				12D3171819AF728400B3E5EA /* SALAttributedStringExtensions.m */,
+			);
+			path = SALAttributedStringExtensions;
+			sourceTree = "<group>";
+		};
+		12D3171919AF728400B3E5EA /* SALHTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				12D3171A19AF728400B3E5EA /* SALHTMLParser.h */,
+				12D3171B19AF728400B3E5EA /* SALHTMLParser.m */,
+			);
+			path = SALHTMLParser;
+			sourceTree = "<group>";
+		};
+		12D3171C19AF728400B3E5EA /* SALImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				12D3171D19AF728400B3E5EA /* SALImageDownloader.h */,
+				12D3171E19AF728400B3E5EA /* SALImageDownloader.m */,
+			);
+			path = SALImageDownloader;
+			sourceTree = "<group>";
+		};
+		12D3171F19AF728400B3E5EA /* SALResizableTextAttachment */ = {
+			isa = PBXGroup;
+			children = (
+				12D3172019AF728400B3E5EA /* SALResizableTextAttachment.h */,
+				12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */,
+			);
+			path = SALResizableTextAttachment;
+			sourceTree = "<group>";
+		};
+		12D3172219AF728400B3E5EA /* UIImage+SALImageResizeToFit */ = {
+			isa = PBXGroup;
+			children = (
+				12D3172319AF728400B3E5EA /* UIImage+SALImageResizeToFit.h */,
+				12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */,
+			);
+			path = "UIImage+SALImageResizeToFit";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1219520F19ADD06300B4959E /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExample" */;
 			buildPhases = (
+				1F2E6B9017C64A79B4A96EB0 /* Check Pods Manifest.lock */,
 				121951D619ADD06200B4959E /* Sources */,
 				121951D719ADD06200B4959E /* Frameworks */,
 				121951D819ADD06200B4959E /* Resources */,
+				6D1110826D624C5CB954F0FF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +332,7 @@
 				121951F419ADD06300B4959E /* Main_iPad.storyboard in Resources */,
 				121951F919ADD06300B4959E /* Images.xcassets in Resources */,
 				121951F119ADD06300B4959E /* Main_iPhone.storyboard in Resources */,
+				1219521D19ADF67B00B4959E /* placeholder.jpg in Resources */,
 				121951E819ADD06300B4959E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +347,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F2E6B9017C64A79B4A96EB0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D1110826D624C5CB954F0FF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		121951D619ADD06200B4959E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,7 +387,13 @@
 			files = (
 				121951F719ADD06300B4959E /* SALViewController.m in Sources */,
 				121951EA19ADD06300B4959E /* main.m in Sources */,
+				12D3172719AF728400B3E5EA /* SALHTMLParser.m in Sources */,
+				12D3172619AF728400B3E5EA /* SALAttributedStringExtensions.m in Sources */,
+				12D3172A19AF728400B3E5EA /* UIImage+SALImageResizeToFit.m in Sources */,
+				12D3172819AF728400B3E5EA /* SALImageDownloader.m in Sources */,
 				121951EE19ADD06300B4959E /* SALAppDelegate.m in Sources */,
+				12D3172919AF728400B3E5EA /* SALResizableTextAttachment.m in Sources */,
+				12D3172519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +525,7 @@
 		};
 		1219521019ADD06300B4959E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +539,7 @@
 		};
 		1219521119ADD06300B4959E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,6 +610,7 @@
 				1219521119ADD06300B4959E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1219521219ADD06300B4959E /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +619,7 @@
 				1219521419ADD06300B4959E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
