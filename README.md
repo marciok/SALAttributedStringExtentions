@@ -15,6 +15,9 @@ Performance
 ###Converting using SALAttributedStringExtentions           
 ![With the extentiosn](https://s3.amazonaws.com/opensourceprojects/withextentions.gif "Regular setup")
 
+## Instalation
+Copy SALAttributedStringExtentions folder into your project.
+
 ## Usage
 
 Just need to create a new object and set the delegate:
