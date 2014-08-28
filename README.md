@@ -17,7 +17,7 @@ Performance
 
 ## Usage
 
-You just need to create a new object and set the delegate:
+Just need to create a new object and set the delegate:
 
 ```objective-c
 SALAttributedStringExtensions *attributedStringExtended = [[SALAttributedStringExtensions alloc] init];
