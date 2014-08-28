@@ -3,7 +3,8 @@ SALAttributedStringExtentions
 
 Improves NSAttributedString functionalities, starting with the convertion from HTML to attributed string
 * Asynchrounsly download images
-* Add placeholder
+* Adds placeholder
+* Auto Resize image to fit in line 
 
 Performance
 -----------
@@ -39,7 +40,8 @@ Implementing the delegates:
     [self.textView.textStorage addAttribute:NSAttachmentAttributeName value:textAttachment range:range];
 }
 ```
-You can create 
+Other options:
+
 ```objective-c
 //Creating without passing a limit height
 NSAttributedString *attrString = [attributedStringExtended attributedStringFromHTML:HTML];
