@@ -26,8 +26,8 @@
     
     NSMutableString *superDuperImgTags = [NSMutableString string];
     
-    for (NSUInteger i = 0; i < 22; i++) {
-        [superDuperImgTags appendString:[NSString stringWithFormat:@"<img src='http://fakeimg.pl/500/?text=%@' /><h2>Header Level 2</h2> <ol> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li> </ol> <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote> <h3>Header Level 3</h3> <ul> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li> <li>Aliquam tincidunt mauris eu risus.</li></ul>", [SALViewController randomString:10]]];
+    for (NSUInteger i = 0; i < 50; i++) {
+        [superDuperImgTags appendString:[NSString stringWithFormat:@"<img src='http://fakeimg.pl/500x300/000000/?text=%@' /><h2>Header Level 2</h2> <ol> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li> </ol> <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote> <h3>Header Level 3</h3> <ul> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li> <li>Aliquam tincidunt mauris eu risus.</li></ul>", [SALViewController randomString:10]]];
     }
     
     NSString *HTML = [NSString stringWithFormat:@"<h1>HTML Ipsum Presents</h1>%@", superDuperImgTags];
@@ -36,9 +36,6 @@
     attributedStringExtended.delegate = self;
     
     NSAttributedString *attrString = [attributedStringExtended attributedStringFromHTML:HTML limitingImageHeight:300];
-    
-//    NSAttributedString *attrString = [attributedStringExtended attributedStringFromHTML:HTML];
-//    NSAttributedString *attrString = [[NSAttributedString alloc] initWithData:[HTML dataUsingEncoding:NSUTF8StringEncoding] options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: @(NSUTF8StringEncoding)} documentAttributes:nil error:nil];
     
     self.textView.editable = NO;
     self.textView.attributedText = attrString;
@@ -72,7 +69,7 @@
     }
     
     //Finding placeholder width;
-    CGSize placeholderSize = CGSizeMake(300, 300);
+    CGSize placeholderSize = CGSizeMake(500, 300);
     
     UIImage *placeholderAlphaImage = [UIImage imageNamed:@"placeholder"];
     
