@@ -8,10 +8,13 @@
 
 #import "SALViewController.h"
 #import "SALAttributedStringExtensions.h"
+//Utils
+#import "UIImage+SALGenerateImage.h"
 
 @interface SALViewController ()
 
 @property (nonatomic, strong) IBOutlet UITextView *textView;
+@property (nonatomic, strong) UIImage *placeholder;
 
 @end
 
@@ -52,7 +55,7 @@
 
 - (UIImage *)imagePlaceholder
 {
-    return [UIImage imageNamed:@"placeholder.jpg"];
+    return self.placeholder;
 }
 
 - (void)textAttachmentDownloaded:(SALResizableTextAttachment *)textAttachment inRange:(NSRange)range
@@ -61,6 +64,22 @@
 }
 
 #pragma mark - Utils
+
+- (UIImage *)placeholder
+{
+    if (_placeholder) {
+        return _placeholder;
+    }
+    
+    //Finding placeholder width;
+    CGSize placeholderSize = CGSizeMake(300, 300);
+    
+    UIImage *placeholderAlphaImage = [UIImage imageNamed:@"placeholder"];
+    
+    _placeholder = [placeholderAlphaImage imageByDrawingOnCanvas:placeholderSize withFillColor:[UIColor colorWithWhite:0.9 alpha:1.0] strokeColor:[UIColor colorWithWhite:0.75 alpha:1.0] withCornerRadius:20];
+    
+    return _placeholder;
+}
 
 static const char __alphabet[] = "0123456789" "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "abcdefghijklmnopqrstuvwxyz";
 

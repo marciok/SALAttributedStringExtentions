@@ -22,13 +22,13 @@
 		1219520219ADD06300B4959E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951E119ADD06300B4959E /* UIKit.framework */; };
 		1219520A19ADD06300B4959E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1219520819ADD06300B4959E /* InfoPlist.strings */; };
 		1219520C19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1219520B19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m */; };
-		1219521D19ADF67B00B4959E /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1219521C19ADF67B00B4959E /* placeholder.jpg */; };
 		12D3172519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */; };
 		12D3172619AF728400B3E5EA /* SALAttributedStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171819AF728400B3E5EA /* SALAttributedStringExtensions.m */; };
 		12D3172719AF728400B3E5EA /* SALHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171B19AF728400B3E5EA /* SALHTMLParser.m */; };
 		12D3172819AF728400B3E5EA /* SALImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171E19AF728400B3E5EA /* SALImageDownloader.m */; };
 		12D3172919AF728400B3E5EA /* SALResizableTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */; };
 		12D3172A19AF728400B3E5EA /* UIImage+SALImageResizeToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */; };
+		12D3172E19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172D19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m */; };
 		F982E08082234B55A0231E27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAA894D8FFA41A1B7AB4DAD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +63,6 @@
 		1219520719ADD06300B4959E /* SALAttributedStringExtentionsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringExtentionsExampleTests-Info.plist"; sourceTree = "<group>"; };
 		1219520919ADD06300B4959E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1219520B19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtentionsExampleTests.m; sourceTree = "<group>"; };
-		1219521C19ADF67B00B4959E /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = placeholder.jpg; path = ../../../../Desktop/placeholder.jpg; sourceTree = "<group>"; };
 		12D3171419AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+SALAttributedStringCustomAttributes.h"; sourceTree = "<group>"; };
 		12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+SALAttributedStringCustomAttributes.m"; sourceTree = "<group>"; };
 		12D3171719AF728400B3E5EA /* SALAttributedStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALAttributedStringExtensions.h; sourceTree = "<group>"; };
@@ -76,6 +75,8 @@
 		12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALResizableTextAttachment.m; sourceTree = "<group>"; };
 		12D3172319AF728400B3E5EA /* UIImage+SALImageResizeToFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SALImageResizeToFit.h"; sourceTree = "<group>"; };
 		12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SALImageResizeToFit.m"; sourceTree = "<group>"; };
+		12D3172C19AF7D6700B3E5EA /* UIImage+SALGenerateImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SALGenerateImage.h"; sourceTree = "<group>"; };
+		12D3172D19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SALGenerateImage.m"; sourceTree = "<group>"; };
 		7FAA894D8FFA41A1B7AB4DAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,7 +142,7 @@
 		121951E319ADD06300B4959E /* SALAttributedStringExtentionsExample */ = {
 			isa = PBXGroup;
 			children = (
-				1219521C19ADF67B00B4959E /* placeholder.jpg */,
+				12D3172B19AF7CE600B3E5EA /* Utils */,
 				121951EC19ADD06300B4959E /* SALAppDelegate.h */,
 				121951ED19ADD06300B4959E /* SALAppDelegate.m */,
 				121951EF19ADD06300B4959E /* Main_iPhone.storyboard */,
@@ -250,6 +251,15 @@
 			path = "UIImage+SALImageResizeToFit";
 			sourceTree = "<group>";
 		};
+		12D3172B19AF7CE600B3E5EA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				12D3172C19AF7D6700B3E5EA /* UIImage+SALGenerateImage.h */,
+				12D3172D19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,7 +342,6 @@
 				121951F419ADD06300B4959E /* Main_iPad.storyboard in Resources */,
 				121951F919ADD06300B4959E /* Images.xcassets in Resources */,
 				121951F119ADD06300B4959E /* Main_iPhone.storyboard in Resources */,
-				1219521D19ADF67B00B4959E /* placeholder.jpg in Resources */,
 				121951E819ADD06300B4959E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +399,7 @@
 				12D3172719AF728400B3E5EA /* SALHTMLParser.m in Sources */,
 				12D3172619AF728400B3E5EA /* SALAttributedStringExtensions.m in Sources */,
 				12D3172A19AF728400B3E5EA /* UIImage+SALImageResizeToFit.m in Sources */,
+				12D3172E19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m in Sources */,
 				12D3172819AF728400B3E5EA /* SALImageDownloader.m in Sources */,
 				121951EE19ADD06300B4959E /* SALAppDelegate.m in Sources */,
 				12D3172919AF728400B3E5EA /* SALResizableTextAttachment.m in Sources */,

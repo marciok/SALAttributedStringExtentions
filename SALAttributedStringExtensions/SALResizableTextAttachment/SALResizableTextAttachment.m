@@ -17,6 +17,9 @@
     
     CGFloat lineWidth = CGRectGetWidth(lineFrag);
     
+    //TODO: Fix this "Gambiarra"
+    lineWidth -= 9;
+    
     if (self.fitInHeight) {
         CGSize sizeToFit = CGSizeMake(lineWidth, self.fitInHeight);
         CGSize finalSize = [self scaleImageSizeToFit:CGSizeMake(sizeToFit.width, sizeToFit.height)];
