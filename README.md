@@ -2,9 +2,9 @@ SALAttributedStringExtentions
 ================================
 
 Improves NSAttributedString functionalities, starting with the convertion from HTML to attributed string
-* Asynchrounsly download images
-* Adds placeholder
-* Auto Resize image to fit in line 
+* Asynchrounsly download images.
+* Adds placeholder.
+* Auto Resize image to fit in line. 
 
 Performance
 -----------
@@ -61,3 +61,8 @@ NSAttributedString *attrString = [attributedStringExtended attributedStringFromH
 - [ ] Remove third party framewroks dependency.
 - [ ] Recoginize data-image-width,height.
                                 
+## License 
+SALAttributedStringExtentions is available under the MIT license. See the LICENSE file for more info.
+
+## Credits
+Thanks [@natanrolnik](https://github.com/natanrolnik) for the inspiration.
