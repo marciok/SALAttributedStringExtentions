@@ -15,13 +15,14 @@ SPEC_BEGIN(SALAttributedStringExtensionsSpec)
 describe(@"SALAttributedStringExtensions", ^{
     
     __block SALAttributedStringExtensions *sut;
+    __block NSAttributedString *convertedAttributedString;
     __block NSString *HTML;
     
     context(@"When converting a HTML to attributed string", ^{
         
-        it(@"it should return attributedStringFromHTML with limitingImageHeight 0", ^{
-        
-            [[sut should] receive:@selector(attributedStringFromHTML:limitingImageHeight:) withArguments:HTML,0];
+        it(@"it should call attributedStringFromHTML with limitingImageHeight 0 and return convertedAttributedString", ^{
+            [[sut should] receive:@selector(attributedStringFromHTML:limitingImageHeight:) andReturn:convertedAttributedString withArguments:HTML,0];
+            convertedAttributedString = [sut attributedStringFromHTML:HTML];
         });
         
         context(@"when attributedStringFromHTML it's called out of the main thread", ^{
