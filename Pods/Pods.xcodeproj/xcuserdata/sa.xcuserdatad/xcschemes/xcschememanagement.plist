@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-SALAttributedStringExtentionsExampleTests-Kiwi.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SALAttributedStringExtentionsExampleTests-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SALAttributedStringExtentionsExampleTests-hpple.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SALAttributedStringExtentionsExampleTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0075DB0E637749B6AB2B211F</key>
+		<key>1566024949AE45A8898536FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>827E0D6111D04502AB9797E1</key>
+		<key>26234AE9E22F435CBEA54CE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ADB35425C44B48FA84BF3E4A</key>
+		<key>41B970F767414F26A4BC01C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44A7B14AB7EB41C2A242C358</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF4BD7D8EA8C425C903A6FA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E02A8104FBAB46489EEFD65C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E77B10786E5D4F33A9EB1CF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

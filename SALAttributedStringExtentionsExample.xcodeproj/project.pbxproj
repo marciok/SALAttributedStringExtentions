@@ -21,7 +21,6 @@
 		1219520119ADD06300B4959E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951DD19ADD06200B4959E /* Foundation.framework */; };
 		1219520219ADD06300B4959E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951E119ADD06300B4959E /* UIKit.framework */; };
 		1219520A19ADD06300B4959E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1219520819ADD06300B4959E /* InfoPlist.strings */; };
-		1219520C19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1219520B19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m */; };
 		12D3172519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */; };
 		12D3172619AF728400B3E5EA /* SALAttributedStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171819AF728400B3E5EA /* SALAttributedStringExtensions.m */; };
 		12D3172719AF728400B3E5EA /* SALHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171B19AF728400B3E5EA /* SALHTMLParser.m */; };
@@ -29,6 +28,11 @@
 		12D3172919AF728400B3E5EA /* SALResizableTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */; };
 		12D3172A19AF728400B3E5EA /* UIImage+SALImageResizeToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */; };
 		12D3172E19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172D19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m */; };
+		12FE445319B08A6B00318C21 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FE445219B08A6A00318C21 /* CoreFoundation.framework */; };
+		12FE445919B08A6B00318C21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12FE445719B08A6B00318C21 /* InfoPlist.strings */; };
+		12FE445F19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FE445E19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m */; };
+		A63995932A3C44058BED4978 /* libPods-SALAttributedStringExtentionsExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C350F1E3735484F8C72D831 /* libPods-SALAttributedStringExtentionsExampleTests.a */; };
+		D65D345768754BB5A1BC5B73 /* libPods-SALAttributedStringSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EAC5675ECC429E8E605A85 /* libPods-SALAttributedStringSpecs.a */; };
 		F982E08082234B55A0231E27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAA894D8FFA41A1B7AB4DAD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +66,6 @@
 		121951FF19ADD06300B4959E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1219520719ADD06300B4959E /* SALAttributedStringExtentionsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringExtentionsExampleTests-Info.plist"; sourceTree = "<group>"; };
 		1219520919ADD06300B4959E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1219520B19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtentionsExampleTests.m; sourceTree = "<group>"; };
 		12D3171419AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+SALAttributedStringCustomAttributes.h"; sourceTree = "<group>"; };
 		12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+SALAttributedStringCustomAttributes.m"; sourceTree = "<group>"; };
 		12D3171719AF728400B3E5EA /* SALAttributedStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALAttributedStringExtensions.h; sourceTree = "<group>"; };
@@ -77,8 +80,18 @@
 		12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SALImageResizeToFit.m"; sourceTree = "<group>"; };
 		12D3172C19AF7D6700B3E5EA /* UIImage+SALGenerateImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SALGenerateImage.h"; sourceTree = "<group>"; };
 		12D3172D19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SALGenerateImage.m"; sourceTree = "<group>"; };
+		12FE445119B08A6A00318C21 /* SALAttributedStringSpecs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SALAttributedStringSpecs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		12FE445219B08A6A00318C21 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		12FE445619B08A6B00318C21 /* SALAttributedStringSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringSpecs-Info.plist"; sourceTree = "<group>"; };
+		12FE445819B08A6B00318C21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12FE445A19B08A6B00318C21 /* SALAttributedStringSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SALAttributedStringSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		12FE445E19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtensionsSpec.m; sourceTree = "<group>"; };
+		25BD34081D6C4E8F96204D87 /* Pods-SALAttributedStringSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SALAttributedStringSpecs.xcconfig"; path = "Pods/Pods-SALAttributedStringSpecs.xcconfig"; sourceTree = "<group>"; };
+		3C350F1E3735484F8C72D831 /* libPods-SALAttributedStringExtentionsExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SALAttributedStringExtentionsExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAA894D8FFA41A1B7AB4DAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B481AF5C18334413844D1994 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SALAttributedStringExtentionsExampleTests.xcconfig"; path = "Pods/Pods-SALAttributedStringExtentionsExampleTests.xcconfig"; sourceTree = "<group>"; };
 		DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E8EAC5675ECC429E8E605A85 /* libPods-SALAttributedStringSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SALAttributedStringSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +113,16 @@
 				1219520019ADD06300B4959E /* XCTest.framework in Frameworks */,
 				1219520219ADD06300B4959E /* UIKit.framework in Frameworks */,
 				1219520119ADD06300B4959E /* Foundation.framework in Frameworks */,
+				A63995932A3C44058BED4978 /* libPods-SALAttributedStringExtentionsExampleTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12FE444E19B08A6A00318C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FE445319B08A6B00318C21 /* CoreFoundation.framework in Frameworks */,
+				D65D345768754BB5A1BC5B73 /* libPods-SALAttributedStringSpecs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +135,12 @@
 				1219521519ADD08F00B4959E /* SALAttributedStringExtensions */,
 				121951E319ADD06300B4959E /* SALAttributedStringExtentionsExample */,
 				1219520519ADD06300B4959E /* SALAttributedStringExtentionsExampleTests */,
+				12FE445419B08A6B00318C21 /* SALAttributedStringSpecs */,
 				121951DC19ADD06200B4959E /* Frameworks */,
 				121951DB19ADD06200B4959E /* Products */,
 				DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */,
+				25BD34081D6C4E8F96204D87 /* Pods-SALAttributedStringSpecs.xcconfig */,
+				B481AF5C18334413844D1994 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +149,7 @@
 			children = (
 				121951DA19ADD06200B4959E /* SALAttributedStringExtentionsExample.app */,
 				121951FE19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.xctest */,
+				12FE445119B08A6A00318C21 /* SALAttributedStringSpecs.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +162,9 @@
 				121951E119ADD06300B4959E /* UIKit.framework */,
 				121951FF19ADD06300B4959E /* XCTest.framework */,
 				7FAA894D8FFA41A1B7AB4DAD /* libPods.a */,
+				12FE445219B08A6A00318C21 /* CoreFoundation.framework */,
+				E8EAC5675ECC429E8E605A85 /* libPods-SALAttributedStringSpecs.a */,
+				3C350F1E3735484F8C72D831 /* libPods-SALAttributedStringExtentionsExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,7 +199,7 @@
 		1219520519ADD06300B4959E /* SALAttributedStringExtentionsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				1219520B19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m */,
+				12FE445E19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m */,
 				1219520619ADD06300B4959E /* Supporting Files */,
 			);
 			path = SALAttributedStringExtentionsExampleTests;
@@ -260,6 +290,24 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		12FE445419B08A6B00318C21 /* SALAttributedStringSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				12FE445519B08A6B00318C21 /* Supporting Files */,
+			);
+			path = SALAttributedStringSpecs;
+			sourceTree = "<group>";
+		};
+		12FE445519B08A6B00318C21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12FE445619B08A6B00318C21 /* SALAttributedStringSpecs-Info.plist */,
+				12FE445719B08A6B00318C21 /* InfoPlist.strings */,
+				12FE445A19B08A6B00318C21 /* SALAttributedStringSpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1219521219ADD06300B4959E /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExampleTests" */;
 			buildPhases = (
+				9F9F135A51394B568391C5E7 /* Check Pods Manifest.lock */,
 				121951FA19ADD06300B4959E /* Sources */,
 				121951FB19ADD06300B4959E /* Frameworks */,
 				121951FC19ADD06300B4959E /* Resources */,
+				5825D8CF41714C57B687314D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,6 +349,25 @@
 			productName = SALAttributedStringExtentionsExampleTests;
 			productReference = 121951FE19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12FE445019B08A6A00318C21 /* SALAttributedStringSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12FE445D19B08A6B00318C21 /* Build configuration list for PBXNativeTarget "SALAttributedStringSpecs" */;
+			buildPhases = (
+				8D50B3F8AFAE47CA825AAB70 /* Check Pods Manifest.lock */,
+				12FE444D19B08A6A00318C21 /* Sources */,
+				12FE444E19B08A6A00318C21 /* Frameworks */,
+				12FE444F19B08A6A00318C21 /* Resources */,
+				015AD7E6DA154D0C85690D3D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SALAttributedStringSpecs;
+			productName = SALAttributedStringSpecs;
+			productReference = 12FE445119B08A6A00318C21 /* SALAttributedStringSpecs.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -330,6 +399,7 @@
 			targets = (
 				121951D919ADD06200B4959E /* SALAttributedStringExtentionsExample */,
 				121951FD19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests */,
+				12FE445019B08A6A00318C21 /* SALAttributedStringSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -354,9 +424,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12FE444F19B08A6A00318C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FE445919B08A6B00318C21 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		015AD7E6DA154D0C85690D3D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SALAttributedStringSpecs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1F2E6B9017C64A79B4A96EB0 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +465,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		5825D8CF41714C57B687314D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SALAttributedStringExtentionsExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6D1110826D624C5CB954F0FF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +493,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D50B3F8AFAE47CA825AAB70 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9F135A51394B568391C5E7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -411,7 +549,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1219520C19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.m in Sources */,
+				12FE445F19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12FE444D19B08A6A00318C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +599,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				1219520919ADD06300B4959E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12FE445719B08A6B00318C21 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12FE445819B08A6B00318C21 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -563,6 +716,7 @@
 		};
 		1219521319ADD06300B4959E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B481AF5C18334413844D1994 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SALAttributedStringExtentionsExample.app/SALAttributedStringExtentionsExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -585,6 +739,7 @@
 		};
 		1219521419ADD06300B4959E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B481AF5C18334413844D1994 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SALAttributedStringExtentionsExample.app/SALAttributedStringExtentionsExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -598,6 +753,45 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		12FE445B19B08A6B00318C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25BD34081D6C4E8F96204D87 /* Pods-SALAttributedStringSpecs.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SALAttributedStringSpecs/SALAttributedStringSpecs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SALAttributedStringSpecs/SALAttributedStringSpecs-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		12FE445C19B08A6B00318C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25BD34081D6C4E8F96204D87 /* Pods-SALAttributedStringSpecs.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SALAttributedStringSpecs/SALAttributedStringSpecs-Prefix.pch";
+				INFOPLIST_FILE = "SALAttributedStringSpecs/SALAttributedStringSpecs-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -627,6 +821,15 @@
 			buildConfigurations = (
 				1219521319ADD06300B4959E /* Debug */,
 				1219521419ADD06300B4959E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12FE445D19B08A6B00318C21 /* Build configuration list for PBXNativeTarget "SALAttributedStringSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12FE445B19B08A6B00318C21 /* Debug */,
+				12FE445C19B08A6B00318C21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
