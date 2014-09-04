@@ -86,10 +86,8 @@
 		12FE445819B08A6B00318C21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12FE445A19B08A6B00318C21 /* SALAttributedStringSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SALAttributedStringSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		12FE445E19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtensionsSpec.m; sourceTree = "<group>"; };
-		25BD34081D6C4E8F96204D87 /* Pods-SALAttributedStringSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SALAttributedStringSpecs.xcconfig"; path = "Pods/Pods-SALAttributedStringSpecs.xcconfig"; sourceTree = "<group>"; };
 		3C350F1E3735484F8C72D831 /* libPods-SALAttributedStringExtentionsExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SALAttributedStringExtentionsExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAA894D8FFA41A1B7AB4DAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B481AF5C18334413844D1994 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SALAttributedStringExtentionsExampleTests.xcconfig"; path = "Pods/Pods-SALAttributedStringExtentionsExampleTests.xcconfig"; sourceTree = "<group>"; };
 		DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E8EAC5675ECC429E8E605A85 /* libPods-SALAttributedStringSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SALAttributedStringSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,8 +137,6 @@
 				121951DC19ADD06200B4959E /* Frameworks */,
 				121951DB19ADD06200B4959E /* Products */,
 				DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */,
-				25BD34081D6C4E8F96204D87 /* Pods-SALAttributedStringSpecs.xcconfig */,
-				B481AF5C18334413844D1994 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -716,7 +712,6 @@
 		};
 		1219521319ADD06300B4959E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B481AF5C18334413844D1994 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SALAttributedStringExtentionsExample.app/SALAttributedStringExtentionsExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -739,7 +734,6 @@
 		};
 		1219521419ADD06300B4959E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B481AF5C18334413844D1994 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SALAttributedStringExtentionsExample.app/SALAttributedStringExtentionsExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -758,7 +752,6 @@
 		};
 		12FE445B19B08A6B00318C21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25BD34081D6C4E8F96204D87 /* Pods-SALAttributedStringSpecs.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -779,7 +772,6 @@
 		};
 		12FE445C19B08A6B00318C21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25BD34081D6C4E8F96204D87 /* Pods-SALAttributedStringSpecs.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
