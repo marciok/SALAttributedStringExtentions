@@ -11,7 +11,7 @@
 
 @interface SALAttributedStringExtensions()
 
-- (NSString *)replaceImgsTagsFromHTML:(NSString *)HTML;
+- (NSString *)filterElementsOnHTML:(NSString *)HTML;
 
 @property (nonatomic, strong) NSMutableArray *imagesURL;
 @property (nonatomic, strong) NSMutableArray *imagesRanges;
@@ -86,7 +86,7 @@ describe(@"SALAttributedStringExtensions", ^{
         });
         
         it(@"should call replaceImgsTagsFromHTML", ^{
-            [[sut should] receive:@selector(replaceImgsTagsFromHTML:) withArguments:HTML];
+            [[sut should] receive:@selector(filterElementsOnHTML:) withArguments:HTML];
             
             [sut attributedStringFromHTML:HTML];
         });

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "121951D919ADD06200B4959E"
+               BlueprintIdentifier = "12B0594719B8A0450064C7F7"
                BuildableName = "SALAttributedStringExtentionsExample.app"
                BlueprintName = "SALAttributedStringExtentionsExample"
                ReferencedContainer = "container:SALAttributedStringExtentionsExample.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "121951FD19ADD06300B4959E"
+               BlueprintIdentifier = "12B0596B19B8A0460064C7F7"
                BuildableName = "SALAttributedStringExtentionsExampleTests.xctest"
                BlueprintName = "SALAttributedStringExtentionsExampleTests"
                ReferencedContainer = "container:SALAttributedStringExtentionsExample.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "121951D919ADD06200B4959E"
+            BlueprintIdentifier = "12B0594719B8A0450064C7F7"
             BuildableName = "SALAttributedStringExtentionsExample.app"
             BlueprintName = "SALAttributedStringExtentionsExample"
             ReferencedContainer = "container:SALAttributedStringExtentionsExample.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "121951D919ADD06200B4959E"
+            BlueprintIdentifier = "12B0594719B8A0450064C7F7"
             BuildableName = "SALAttributedStringExtentionsExample.app"
             BlueprintName = "SALAttributedStringExtentionsExample"
             ReferencedContainer = "container:SALAttributedStringExtentionsExample.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "121951D919ADD06200B4959E"
+            BlueprintIdentifier = "12B0594719B8A0450064C7F7"
             BuildableName = "SALAttributedStringExtentionsExample.app"
             BlueprintName = "SALAttributedStringExtentionsExample"
             ReferencedContainer = "container:SALAttributedStringExtentionsExample.xcodeproj">

@@ -7,315 +7,279 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121951DE19ADD06200B4959E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951DD19ADD06200B4959E /* Foundation.framework */; };
-		121951E019ADD06300B4959E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951DF19ADD06300B4959E /* CoreGraphics.framework */; };
-		121951E219ADD06300B4959E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951E119ADD06300B4959E /* UIKit.framework */; };
-		121951E819ADD06300B4959E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 121951E619ADD06300B4959E /* InfoPlist.strings */; };
-		121951EA19ADD06300B4959E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 121951E919ADD06300B4959E /* main.m */; };
-		121951EE19ADD06300B4959E /* SALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 121951ED19ADD06300B4959E /* SALAppDelegate.m */; };
-		121951F119ADD06300B4959E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121951EF19ADD06300B4959E /* Main_iPhone.storyboard */; };
-		121951F419ADD06300B4959E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121951F219ADD06300B4959E /* Main_iPad.storyboard */; };
-		121951F719ADD06300B4959E /* SALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 121951F619ADD06300B4959E /* SALViewController.m */; };
-		121951F919ADD06300B4959E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121951F819ADD06300B4959E /* Images.xcassets */; };
-		1219520019ADD06300B4959E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951FF19ADD06300B4959E /* XCTest.framework */; };
-		1219520119ADD06300B4959E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951DD19ADD06200B4959E /* Foundation.framework */; };
-		1219520219ADD06300B4959E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121951E119ADD06300B4959E /* UIKit.framework */; };
-		1219520A19ADD06300B4959E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1219520819ADD06300B4959E /* InfoPlist.strings */; };
-		12D3172519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */; };
-		12D3172619AF728400B3E5EA /* SALAttributedStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171819AF728400B3E5EA /* SALAttributedStringExtensions.m */; };
-		12D3172719AF728400B3E5EA /* SALHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171B19AF728400B3E5EA /* SALHTMLParser.m */; };
-		12D3172819AF728400B3E5EA /* SALImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3171E19AF728400B3E5EA /* SALImageDownloader.m */; };
-		12D3172919AF728400B3E5EA /* SALResizableTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */; };
-		12D3172A19AF728400B3E5EA /* UIImage+SALImageResizeToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */; };
-		12D3172E19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D3172D19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m */; };
-		12FE445319B08A6B00318C21 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FE445219B08A6A00318C21 /* CoreFoundation.framework */; };
-		12FE445919B08A6B00318C21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12FE445719B08A6B00318C21 /* InfoPlist.strings */; };
-		12FE445F19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FE445E19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m */; };
-		A63995932A3C44058BED4978 /* libPods-SALAttributedStringExtentionsExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C350F1E3735484F8C72D831 /* libPods-SALAttributedStringExtentionsExampleTests.a */; };
-		D65D345768754BB5A1BC5B73 /* libPods-SALAttributedStringSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EAC5675ECC429E8E605A85 /* libPods-SALAttributedStringSpecs.a */; };
-		F982E08082234B55A0231E27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAA894D8FFA41A1B7AB4DAD /* libPods.a */; };
+		12B0594C19B8A0450064C7F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B0594B19B8A0450064C7F7 /* Foundation.framework */; };
+		12B0594E19B8A0450064C7F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B0594D19B8A0450064C7F7 /* CoreGraphics.framework */; };
+		12B0595019B8A0450064C7F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B0594F19B8A0450064C7F7 /* UIKit.framework */; };
+		12B0595619B8A0450064C7F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12B0595419B8A0450064C7F7 /* InfoPlist.strings */; };
+		12B0595819B8A0450064C7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B0595719B8A0450064C7F7 /* main.m */; };
+		12B0595C19B8A0450064C7F7 /* CTTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B0595B19B8A0450064C7F7 /* CTTAppDelegate.m */; };
+		12B0595F19B8A0450064C7F7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B0595D19B8A0450064C7F7 /* Main_iPhone.storyboard */; };
+		12B0596219B8A0450064C7F7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B0596019B8A0450064C7F7 /* Main_iPad.storyboard */; };
+		12B0596519B8A0460064C7F7 /* CTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B0596419B8A0460064C7F7 /* CTTViewController.m */; };
+		12B0596719B8A0460064C7F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B0596619B8A0460064C7F7 /* Images.xcassets */; };
+		12B0596E19B8A0460064C7F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B0596D19B8A0460064C7F7 /* XCTest.framework */; };
+		12B0596F19B8A0460064C7F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B0594B19B8A0450064C7F7 /* Foundation.framework */; };
+		12B0597019B8A0460064C7F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B0594F19B8A0450064C7F7 /* UIKit.framework */; };
+		12B0597819B8A0460064C7F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12B0597619B8A0460064C7F7 /* InfoPlist.strings */; };
+		12B059A319B8A0DA0064C7F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12B0599D19B8A0DA0064C7F7 /* InfoPlist.strings */; };
+		12B059A419B8A0DA0064C7F7 /* SALAttributedStringExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B0599F19B8A0DA0064C7F7 /* SALAttributedStringExtensionsSpec.m */; };
+		12B059A519B8A0DA0064C7F7 /* SALAttributedStringExtentionsExampleTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12B059A019B8A0DA0064C7F7 /* SALAttributedStringExtentionsExampleTests-Info.plist */; };
+		12B059A919B8A22B0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B059A819B8A22B0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes.m */; };
+		12B059AC19B8A2330064C7F7 /* SALAttributedStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B059AB19B8A2330064C7F7 /* SALAttributedStringExtensions.m */; };
+		12B059AF19B8A2400064C7F7 /* SALHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B059AE19B8A2400064C7F7 /* SALHTMLParser.m */; };
+		12B059B219B8A2470064C7F7 /* SALImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B059B119B8A2470064C7F7 /* SALImageDownloader.m */; };
+		12B059B519B8A24E0064C7F7 /* SALResizableTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B059B419B8A24E0064C7F7 /* SALResizableTextAttachment.m */; };
+		12B059B819B8A2540064C7F7 /* UIImage+SALImageResizeToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B059B719B8A2540064C7F7 /* UIImage+SALImageResizeToFit.m */; };
+		72557574ED9C48C6A8B44185 /* libPods-SALAttributedStringExtentionsExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B49C72EB1B94EE7843C8415 /* libPods-SALAttributedStringExtentionsExampleTests.a */; };
+		80F84D7C84A24B768DF013FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D42D8455754446FA85CB8DD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1219520319ADD06300B4959E /* PBXContainerItemProxy */ = {
+		12B0597119B8A0460064C7F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 121951D219ADD06200B4959E /* Project object */;
+			containerPortal = 12B0594019B8A0450064C7F7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 121951D919ADD06200B4959E;
+			remoteGlobalIDString = 12B0594719B8A0450064C7F7;
 			remoteInfo = SALAttributedStringExtentionsExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		121951DA19ADD06200B4959E /* SALAttributedStringExtentionsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SALAttributedStringExtentionsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		121951DD19ADD06200B4959E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		121951DF19ADD06300B4959E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		121951E119ADD06300B4959E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		121951E519ADD06300B4959E /* SALAttributedStringExtentionsExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringExtentionsExample-Info.plist"; sourceTree = "<group>"; };
-		121951E719ADD06300B4959E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		121951E919ADD06300B4959E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		121951EB19ADD06300B4959E /* SALAttributedStringExtentionsExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SALAttributedStringExtentionsExample-Prefix.pch"; sourceTree = "<group>"; };
-		121951EC19ADD06300B4959E /* SALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SALAppDelegate.h; sourceTree = "<group>"; };
-		121951ED19ADD06300B4959E /* SALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALAppDelegate.m; sourceTree = "<group>"; };
-		121951F019ADD06300B4959E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		121951F319ADD06300B4959E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		121951F519ADD06300B4959E /* SALViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SALViewController.h; sourceTree = "<group>"; };
-		121951F619ADD06300B4959E /* SALViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALViewController.m; sourceTree = "<group>"; };
-		121951F819ADD06300B4959E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		121951FE19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SALAttributedStringExtentionsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		121951FF19ADD06300B4959E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1219520719ADD06300B4959E /* SALAttributedStringExtentionsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringExtentionsExampleTests-Info.plist"; sourceTree = "<group>"; };
-		1219520919ADD06300B4959E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		12D3171419AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+SALAttributedStringCustomAttributes.h"; sourceTree = "<group>"; };
-		12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+SALAttributedStringCustomAttributes.m"; sourceTree = "<group>"; };
-		12D3171719AF728400B3E5EA /* SALAttributedStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALAttributedStringExtensions.h; sourceTree = "<group>"; };
-		12D3171819AF728400B3E5EA /* SALAttributedStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtensions.m; sourceTree = "<group>"; };
-		12D3171A19AF728400B3E5EA /* SALHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALHTMLParser.h; sourceTree = "<group>"; };
-		12D3171B19AF728400B3E5EA /* SALHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALHTMLParser.m; sourceTree = "<group>"; };
-		12D3171D19AF728400B3E5EA /* SALImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALImageDownloader.h; sourceTree = "<group>"; };
-		12D3171E19AF728400B3E5EA /* SALImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALImageDownloader.m; sourceTree = "<group>"; };
-		12D3172019AF728400B3E5EA /* SALResizableTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALResizableTextAttachment.h; sourceTree = "<group>"; };
-		12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALResizableTextAttachment.m; sourceTree = "<group>"; };
-		12D3172319AF728400B3E5EA /* UIImage+SALImageResizeToFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SALImageResizeToFit.h"; sourceTree = "<group>"; };
-		12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SALImageResizeToFit.m"; sourceTree = "<group>"; };
-		12D3172C19AF7D6700B3E5EA /* UIImage+SALGenerateImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SALGenerateImage.h"; sourceTree = "<group>"; };
-		12D3172D19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SALGenerateImage.m"; sourceTree = "<group>"; };
-		12FE445119B08A6A00318C21 /* SALAttributedStringSpecs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SALAttributedStringSpecs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		12FE445219B08A6A00318C21 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		12FE445619B08A6B00318C21 /* SALAttributedStringSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringSpecs-Info.plist"; sourceTree = "<group>"; };
-		12FE445819B08A6B00318C21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		12FE445A19B08A6B00318C21 /* SALAttributedStringSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SALAttributedStringSpecs-Prefix.pch"; sourceTree = "<group>"; };
-		12FE445E19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtensionsSpec.m; sourceTree = "<group>"; };
-		3C350F1E3735484F8C72D831 /* libPods-SALAttributedStringExtentionsExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SALAttributedStringExtentionsExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FAA894D8FFA41A1B7AB4DAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		E8EAC5675ECC429E8E605A85 /* libPods-SALAttributedStringSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SALAttributedStringSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		123FD5A8E3CF42F0AD1607D2 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SALAttributedStringExtentionsExampleTests.xcconfig"; path = "Pods/Pods-SALAttributedStringExtentionsExampleTests.xcconfig"; sourceTree = "<group>"; };
+		12B0594819B8A0450064C7F7 /* SALAttributedStringExtentionsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SALAttributedStringExtentionsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B0594B19B8A0450064C7F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12B0594D19B8A0450064C7F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12B0594F19B8A0450064C7F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12B0595319B8A0450064C7F7 /* SALAttributedStringExtentionsExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringExtentionsExample-Info.plist"; sourceTree = "<group>"; };
+		12B0595519B8A0450064C7F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12B0595719B8A0450064C7F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12B0595919B8A0450064C7F7 /* SALAttributedStringExtentionsExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SALAttributedStringExtentionsExample-Prefix.pch"; sourceTree = "<group>"; };
+		12B0595A19B8A0450064C7F7 /* CTTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTTAppDelegate.h; sourceTree = "<group>"; };
+		12B0595B19B8A0450064C7F7 /* CTTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTTAppDelegate.m; sourceTree = "<group>"; };
+		12B0595E19B8A0450064C7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		12B0596119B8A0450064C7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		12B0596319B8A0460064C7F7 /* CTTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTTViewController.h; sourceTree = "<group>"; };
+		12B0596419B8A0460064C7F7 /* CTTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTTViewController.m; sourceTree = "<group>"; };
+		12B0596619B8A0460064C7F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12B0596C19B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SALAttributedStringExtentionsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B0596D19B8A0460064C7F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		12B0597519B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SALAttributedStringExtentionsExampleTests-Info.plist"; sourceTree = "<group>"; };
+		12B0597719B8A0460064C7F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12B0599E19B8A0DA0064C7F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12B0599F19B8A0DA0064C7F7 /* SALAttributedStringExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtensionsSpec.m; sourceTree = "<group>"; };
+		12B059A019B8A0DA0064C7F7 /* SALAttributedStringExtentionsExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SALAttributedStringExtentionsExampleTests-Info.plist"; sourceTree = "<group>"; };
+		12B059A719B8A22B0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+SALAttributedStringCustomAttributes.h"; path = "SALAttributedStringExtensions/NSAttributedString+SALAttributedStringCustomAttributes/NSAttributedString+SALAttributedStringCustomAttributes.h"; sourceTree = SOURCE_ROOT; };
+		12B059A819B8A22B0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+SALAttributedStringCustomAttributes.m"; path = "SALAttributedStringExtensions/NSAttributedString+SALAttributedStringCustomAttributes/NSAttributedString+SALAttributedStringCustomAttributes.m"; sourceTree = SOURCE_ROOT; };
+		12B059AA19B8A2330064C7F7 /* SALAttributedStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SALAttributedStringExtensions.h; path = SALAttributedStringExtensions/SALAttributedStringExtensions/SALAttributedStringExtensions.h; sourceTree = SOURCE_ROOT; };
+		12B059AB19B8A2330064C7F7 /* SALAttributedStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SALAttributedStringExtensions.m; path = SALAttributedStringExtensions/SALAttributedStringExtensions/SALAttributedStringExtensions.m; sourceTree = SOURCE_ROOT; };
+		12B059AD19B8A2400064C7F7 /* SALHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SALHTMLParser.h; path = SALAttributedStringExtensions/SALHTMLParser/SALHTMLParser.h; sourceTree = SOURCE_ROOT; };
+		12B059AE19B8A2400064C7F7 /* SALHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SALHTMLParser.m; path = SALAttributedStringExtensions/SALHTMLParser/SALHTMLParser.m; sourceTree = SOURCE_ROOT; };
+		12B059B019B8A2470064C7F7 /* SALImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SALImageDownloader.h; path = SALAttributedStringExtensions/SALImageDownloader/SALImageDownloader.h; sourceTree = SOURCE_ROOT; };
+		12B059B119B8A2470064C7F7 /* SALImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SALImageDownloader.m; path = SALAttributedStringExtensions/SALImageDownloader/SALImageDownloader.m; sourceTree = SOURCE_ROOT; };
+		12B059B319B8A24E0064C7F7 /* SALResizableTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SALResizableTextAttachment.h; path = SALAttributedStringExtensions/SALResizableTextAttachment/SALResizableTextAttachment.h; sourceTree = SOURCE_ROOT; };
+		12B059B419B8A24E0064C7F7 /* SALResizableTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SALResizableTextAttachment.m; path = SALAttributedStringExtensions/SALResizableTextAttachment/SALResizableTextAttachment.m; sourceTree = SOURCE_ROOT; };
+		12B059B619B8A2540064C7F7 /* UIImage+SALImageResizeToFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+SALImageResizeToFit.h"; path = "SALAttributedStringExtensions/UIImage+SALImageResizeToFit/UIImage+SALImageResizeToFit.h"; sourceTree = SOURCE_ROOT; };
+		12B059B719B8A2540064C7F7 /* UIImage+SALImageResizeToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SALImageResizeToFit.m"; path = "SALAttributedStringExtensions/UIImage+SALImageResizeToFit/UIImage+SALImageResizeToFit.m"; sourceTree = SOURCE_ROOT; };
+		2B49C72EB1B94EE7843C8415 /* libPods-SALAttributedStringExtentionsExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SALAttributedStringExtentionsExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3549358E7F0047D5AFE48F31 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		4D42D8455754446FA85CB8DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		121951D719ADD06200B4959E /* Frameworks */ = {
+		12B0594519B8A0450064C7F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121951E019ADD06300B4959E /* CoreGraphics.framework in Frameworks */,
-				121951E219ADD06300B4959E /* UIKit.framework in Frameworks */,
-				121951DE19ADD06200B4959E /* Foundation.framework in Frameworks */,
-				F982E08082234B55A0231E27 /* libPods.a in Frameworks */,
+				12B0594E19B8A0450064C7F7 /* CoreGraphics.framework in Frameworks */,
+				12B0595019B8A0450064C7F7 /* UIKit.framework in Frameworks */,
+				12B0594C19B8A0450064C7F7 /* Foundation.framework in Frameworks */,
+				80F84D7C84A24B768DF013FB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		121951FB19ADD06300B4959E /* Frameworks */ = {
+		12B0596919B8A0460064C7F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1219520019ADD06300B4959E /* XCTest.framework in Frameworks */,
-				1219520219ADD06300B4959E /* UIKit.framework in Frameworks */,
-				1219520119ADD06300B4959E /* Foundation.framework in Frameworks */,
-				A63995932A3C44058BED4978 /* libPods-SALAttributedStringExtentionsExampleTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12FE444E19B08A6A00318C21 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12FE445319B08A6B00318C21 /* CoreFoundation.framework in Frameworks */,
-				D65D345768754BB5A1BC5B73 /* libPods-SALAttributedStringSpecs.a in Frameworks */,
+				12B0596E19B8A0460064C7F7 /* XCTest.framework in Frameworks */,
+				12B0597019B8A0460064C7F7 /* UIKit.framework in Frameworks */,
+				12B0596F19B8A0460064C7F7 /* Foundation.framework in Frameworks */,
+				72557574ED9C48C6A8B44185 /* libPods-SALAttributedStringExtentionsExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		121951D119ADD06200B4959E = {
+		12B0593F19B8A0450064C7F7 = {
 			isa = PBXGroup;
 			children = (
-				1219521519ADD08F00B4959E /* SALAttributedStringExtensions */,
-				121951E319ADD06300B4959E /* SALAttributedStringExtentionsExample */,
-				1219520519ADD06300B4959E /* SALAttributedStringExtentionsExampleTests */,
-				12FE445419B08A6B00318C21 /* SALAttributedStringSpecs */,
-				121951DC19ADD06200B4959E /* Frameworks */,
-				121951DB19ADD06200B4959E /* Products */,
-				DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */,
+				12B0598319B8A0AD0064C7F7 /* SALAttributedStringExtensions */,
+				12B0595119B8A0450064C7F7 /* SALAttributedStringExtentionsExample */,
+				12B0597319B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests */,
+				12B0594A19B8A0450064C7F7 /* Frameworks */,
+				12B0594919B8A0450064C7F7 /* Products */,
+				3549358E7F0047D5AFE48F31 /* Pods.xcconfig */,
+				123FD5A8E3CF42F0AD1607D2 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
-		121951DB19ADD06200B4959E /* Products */ = {
+		12B0594919B8A0450064C7F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				121951DA19ADD06200B4959E /* SALAttributedStringExtentionsExample.app */,
-				121951FE19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.xctest */,
-				12FE445119B08A6A00318C21 /* SALAttributedStringSpecs.bundle */,
+				12B0594819B8A0450064C7F7 /* SALAttributedStringExtentionsExample.app */,
+				12B0596C19B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		121951DC19ADD06200B4959E /* Frameworks */ = {
+		12B0594A19B8A0450064C7F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				121951DD19ADD06200B4959E /* Foundation.framework */,
-				121951DF19ADD06300B4959E /* CoreGraphics.framework */,
-				121951E119ADD06300B4959E /* UIKit.framework */,
-				121951FF19ADD06300B4959E /* XCTest.framework */,
-				7FAA894D8FFA41A1B7AB4DAD /* libPods.a */,
-				12FE445219B08A6A00318C21 /* CoreFoundation.framework */,
-				E8EAC5675ECC429E8E605A85 /* libPods-SALAttributedStringSpecs.a */,
-				3C350F1E3735484F8C72D831 /* libPods-SALAttributedStringExtentionsExampleTests.a */,
+				12B0594B19B8A0450064C7F7 /* Foundation.framework */,
+				12B0594D19B8A0450064C7F7 /* CoreGraphics.framework */,
+				12B0594F19B8A0450064C7F7 /* UIKit.framework */,
+				12B0596D19B8A0460064C7F7 /* XCTest.framework */,
+				4D42D8455754446FA85CB8DD /* libPods.a */,
+				2B49C72EB1B94EE7843C8415 /* libPods-SALAttributedStringExtentionsExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		121951E319ADD06300B4959E /* SALAttributedStringExtentionsExample */ = {
+		12B0595119B8A0450064C7F7 /* SALAttributedStringExtentionsExample */ = {
 			isa = PBXGroup;
 			children = (
-				12D3172B19AF7CE600B3E5EA /* Utils */,
-				121951EC19ADD06300B4959E /* SALAppDelegate.h */,
-				121951ED19ADD06300B4959E /* SALAppDelegate.m */,
-				121951EF19ADD06300B4959E /* Main_iPhone.storyboard */,
-				121951F219ADD06300B4959E /* Main_iPad.storyboard */,
-				121951F519ADD06300B4959E /* SALViewController.h */,
-				121951F619ADD06300B4959E /* SALViewController.m */,
-				121951F819ADD06300B4959E /* Images.xcassets */,
-				121951E419ADD06300B4959E /* Supporting Files */,
+				12B0595A19B8A0450064C7F7 /* CTTAppDelegate.h */,
+				12B0595B19B8A0450064C7F7 /* CTTAppDelegate.m */,
+				12B0595D19B8A0450064C7F7 /* Main_iPhone.storyboard */,
+				12B0596019B8A0450064C7F7 /* Main_iPad.storyboard */,
+				12B0596319B8A0460064C7F7 /* CTTViewController.h */,
+				12B0596419B8A0460064C7F7 /* CTTViewController.m */,
+				12B0596619B8A0460064C7F7 /* Images.xcassets */,
+				12B0595219B8A0450064C7F7 /* Supporting Files */,
 			);
 			path = SALAttributedStringExtentionsExample;
 			sourceTree = "<group>";
 		};
-		121951E419ADD06300B4959E /* Supporting Files */ = {
+		12B0595219B8A0450064C7F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				121951E519ADD06300B4959E /* SALAttributedStringExtentionsExample-Info.plist */,
-				121951E619ADD06300B4959E /* InfoPlist.strings */,
-				121951E919ADD06300B4959E /* main.m */,
-				121951EB19ADD06300B4959E /* SALAttributedStringExtentionsExample-Prefix.pch */,
+				12B0595319B8A0450064C7F7 /* SALAttributedStringExtentionsExample-Info.plist */,
+				12B0595419B8A0450064C7F7 /* InfoPlist.strings */,
+				12B0595719B8A0450064C7F7 /* main.m */,
+				12B0595919B8A0450064C7F7 /* SALAttributedStringExtentionsExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1219520519ADD06300B4959E /* SALAttributedStringExtentionsExampleTests */ = {
+		12B0597319B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				12FE445E19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m */,
-				1219520619ADD06300B4959E /* Supporting Files */,
+				12B0599C19B8A0DA0064C7F7 /* SALAttributedStringExtentionsExampleTests */,
+				12B0597419B8A0460064C7F7 /* Supporting Files */,
 			);
 			path = SALAttributedStringExtentionsExampleTests;
 			sourceTree = "<group>";
 		};
-		1219520619ADD06300B4959E /* Supporting Files */ = {
+		12B0597419B8A0460064C7F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1219520719ADD06300B4959E /* SALAttributedStringExtentionsExampleTests-Info.plist */,
-				1219520819ADD06300B4959E /* InfoPlist.strings */,
+				12B0597519B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests-Info.plist */,
+				12B0597619B8A0460064C7F7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1219521519ADD08F00B4959E /* SALAttributedStringExtensions */ = {
+		12B0598319B8A0AD0064C7F7 /* SALAttributedStringExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				12D3171319AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes */,
-				12D3171619AF728400B3E5EA /* SALAttributedStringExtensions */,
-				12D3171919AF728400B3E5EA /* SALHTMLParser */,
-				12D3171C19AF728400B3E5EA /* SALImageDownloader */,
-				12D3171F19AF728400B3E5EA /* SALResizableTextAttachment */,
-				12D3172219AF728400B3E5EA /* UIImage+SALImageResizeToFit */,
+				12B0598419B8A0AD0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes */,
+				12B0598719B8A0AD0064C7F7 /* SALAttributedStringExtensions */,
+				12B0598A19B8A0AD0064C7F7 /* SALHTMLParser */,
+				12B0598D19B8A0AD0064C7F7 /* SALImageDownloader */,
+				12B0599019B8A0AD0064C7F7 /* SALResizableTextAttachment */,
+				12B0599319B8A0AD0064C7F7 /* UIImage+SALImageResizeToFit */,
 			);
-			path = SALAttributedStringExtensions;
+			name = SALAttributedStringExtensions;
+			path = ../../SALAttributedStringExtensions;
 			sourceTree = "<group>";
 		};
-		12D3171319AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes */ = {
+		12B0598419B8A0AD0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes */ = {
 			isa = PBXGroup;
 			children = (
-				12D3171419AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.h */,
-				12D3171519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m */,
+				12B059A719B8A22B0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes.h */,
+				12B059A819B8A22B0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes.m */,
 			);
 			path = "NSAttributedString+SALAttributedStringCustomAttributes";
 			sourceTree = "<group>";
 		};
-		12D3171619AF728400B3E5EA /* SALAttributedStringExtensions */ = {
+		12B0598719B8A0AD0064C7F7 /* SALAttributedStringExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				12D3171719AF728400B3E5EA /* SALAttributedStringExtensions.h */,
-				12D3171819AF728400B3E5EA /* SALAttributedStringExtensions.m */,
+				12B059AA19B8A2330064C7F7 /* SALAttributedStringExtensions.h */,
+				12B059AB19B8A2330064C7F7 /* SALAttributedStringExtensions.m */,
 			);
 			path = SALAttributedStringExtensions;
 			sourceTree = "<group>";
 		};
-		12D3171919AF728400B3E5EA /* SALHTMLParser */ = {
+		12B0598A19B8A0AD0064C7F7 /* SALHTMLParser */ = {
 			isa = PBXGroup;
 			children = (
-				12D3171A19AF728400B3E5EA /* SALHTMLParser.h */,
-				12D3171B19AF728400B3E5EA /* SALHTMLParser.m */,
+				12B059AD19B8A2400064C7F7 /* SALHTMLParser.h */,
+				12B059AE19B8A2400064C7F7 /* SALHTMLParser.m */,
 			);
 			path = SALHTMLParser;
 			sourceTree = "<group>";
 		};
-		12D3171C19AF728400B3E5EA /* SALImageDownloader */ = {
+		12B0598D19B8A0AD0064C7F7 /* SALImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				12D3171D19AF728400B3E5EA /* SALImageDownloader.h */,
-				12D3171E19AF728400B3E5EA /* SALImageDownloader.m */,
+				12B059B019B8A2470064C7F7 /* SALImageDownloader.h */,
+				12B059B119B8A2470064C7F7 /* SALImageDownloader.m */,
 			);
 			path = SALImageDownloader;
 			sourceTree = "<group>";
 		};
-		12D3171F19AF728400B3E5EA /* SALResizableTextAttachment */ = {
+		12B0599019B8A0AD0064C7F7 /* SALResizableTextAttachment */ = {
 			isa = PBXGroup;
 			children = (
-				12D3172019AF728400B3E5EA /* SALResizableTextAttachment.h */,
-				12D3172119AF728400B3E5EA /* SALResizableTextAttachment.m */,
+				12B059B319B8A24E0064C7F7 /* SALResizableTextAttachment.h */,
+				12B059B419B8A24E0064C7F7 /* SALResizableTextAttachment.m */,
 			);
 			path = SALResizableTextAttachment;
 			sourceTree = "<group>";
 		};
-		12D3172219AF728400B3E5EA /* UIImage+SALImageResizeToFit */ = {
+		12B0599319B8A0AD0064C7F7 /* UIImage+SALImageResizeToFit */ = {
 			isa = PBXGroup;
 			children = (
-				12D3172319AF728400B3E5EA /* UIImage+SALImageResizeToFit.h */,
-				12D3172419AF728400B3E5EA /* UIImage+SALImageResizeToFit.m */,
+				12B059B619B8A2540064C7F7 /* UIImage+SALImageResizeToFit.h */,
+				12B059B719B8A2540064C7F7 /* UIImage+SALImageResizeToFit.m */,
 			);
 			path = "UIImage+SALImageResizeToFit";
 			sourceTree = "<group>";
 		};
-		12D3172B19AF7CE600B3E5EA /* Utils */ = {
+		12B0599C19B8A0DA0064C7F7 /* SALAttributedStringExtentionsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				12D3172C19AF7D6700B3E5EA /* UIImage+SALGenerateImage.h */,
-				12D3172D19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m */,
+				12B0599D19B8A0DA0064C7F7 /* InfoPlist.strings */,
+				12B0599F19B8A0DA0064C7F7 /* SALAttributedStringExtensionsSpec.m */,
+				12B059A019B8A0DA0064C7F7 /* SALAttributedStringExtentionsExampleTests-Info.plist */,
 			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		12FE445419B08A6B00318C21 /* SALAttributedStringSpecs */ = {
-			isa = PBXGroup;
-			children = (
-				12FE445519B08A6B00318C21 /* Supporting Files */,
-			);
-			path = SALAttributedStringSpecs;
-			sourceTree = "<group>";
-		};
-		12FE445519B08A6B00318C21 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				12FE445619B08A6B00318C21 /* SALAttributedStringSpecs-Info.plist */,
-				12FE445719B08A6B00318C21 /* InfoPlist.strings */,
-				12FE445A19B08A6B00318C21 /* SALAttributedStringSpecs-Prefix.pch */,
-			);
-			name = "Supporting Files";
+			name = SALAttributedStringExtentionsExampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		121951D919ADD06200B4959E /* SALAttributedStringExtentionsExample */ = {
+		12B0594719B8A0450064C7F7 /* SALAttributedStringExtentionsExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1219520F19ADD06300B4959E /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExample" */;
+			buildConfigurationList = 12B0597D19B8A0460064C7F7 /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExample" */;
 			buildPhases = (
-				1F2E6B9017C64A79B4A96EB0 /* Check Pods Manifest.lock */,
-				121951D619ADD06200B4959E /* Sources */,
-				121951D719ADD06200B4959E /* Frameworks */,
-				121951D819ADD06200B4959E /* Resources */,
-				6D1110826D624C5CB954F0FF /* Copy Pods Resources */,
+				00ECF957ED7D44B99DC01D2B /* Check Pods Manifest.lock */,
+				12B0594419B8A0450064C7F7 /* Sources */,
+				12B0594519B8A0450064C7F7 /* Frameworks */,
+				12B0594619B8A0450064C7F7 /* Resources */,
+				204B7D75C7244478A8317915 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,64 +287,45 @@
 			);
 			name = SALAttributedStringExtentionsExample;
 			productName = SALAttributedStringExtentionsExample;
-			productReference = 121951DA19ADD06200B4959E /* SALAttributedStringExtentionsExample.app */;
+			productReference = 12B0594819B8A0450064C7F7 /* SALAttributedStringExtentionsExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		121951FD19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests */ = {
+		12B0596B19B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1219521219ADD06300B4959E /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExampleTests" */;
+			buildConfigurationList = 12B0598019B8A0460064C7F7 /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExampleTests" */;
 			buildPhases = (
-				9F9F135A51394B568391C5E7 /* Check Pods Manifest.lock */,
-				121951FA19ADD06300B4959E /* Sources */,
-				121951FB19ADD06300B4959E /* Frameworks */,
-				121951FC19ADD06300B4959E /* Resources */,
-				5825D8CF41714C57B687314D /* Copy Pods Resources */,
+				B2365B3F73B942DD91B43246 /* Check Pods Manifest.lock */,
+				12B0596819B8A0460064C7F7 /* Sources */,
+				12B0596919B8A0460064C7F7 /* Frameworks */,
+				12B0596A19B8A0460064C7F7 /* Resources */,
+				C71499D1F21F4F09BBAD51B8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1219520419ADD06300B4959E /* PBXTargetDependency */,
+				12B0597219B8A0460064C7F7 /* PBXTargetDependency */,
 			);
 			name = SALAttributedStringExtentionsExampleTests;
 			productName = SALAttributedStringExtentionsExampleTests;
-			productReference = 121951FE19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests.xctest */;
+			productReference = 12B0596C19B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		12FE445019B08A6A00318C21 /* SALAttributedStringSpecs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 12FE445D19B08A6B00318C21 /* Build configuration list for PBXNativeTarget "SALAttributedStringSpecs" */;
-			buildPhases = (
-				8D50B3F8AFAE47CA825AAB70 /* Check Pods Manifest.lock */,
-				12FE444D19B08A6A00318C21 /* Sources */,
-				12FE444E19B08A6A00318C21 /* Frameworks */,
-				12FE444F19B08A6A00318C21 /* Resources */,
-				015AD7E6DA154D0C85690D3D /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SALAttributedStringSpecs;
-			productName = SALAttributedStringSpecs;
-			productReference = 12FE445119B08A6A00318C21 /* SALAttributedStringSpecs.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		121951D219ADD06200B4959E /* Project object */ = {
+		12B0594019B8A0450064C7F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = SAL;
+				CLASSPREFIX = CTT;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Seeking Alpha";
 				TargetAttributes = {
-					121951FD19ADD06300B4959E = {
-						TestTargetID = 121951D919ADD06200B4959E;
+					12B0596B19B8A0460064C7F7 = {
+						TestTargetID = 12B0594719B8A0450064C7F7;
 					};
 				};
 			};
-			buildConfigurationList = 121951D519ADD06200B4959E /* Build configuration list for PBXProject "SALAttributedStringExtentionsExample" */;
+			buildConfigurationList = 12B0594319B8A0450064C7F7 /* Build configuration list for PBXProject "SALAttributedStringExtentionsExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -388,65 +333,43 @@
 				en,
 				Base,
 			);
-			mainGroup = 121951D119ADD06200B4959E;
-			productRefGroup = 121951DB19ADD06200B4959E /* Products */;
+			mainGroup = 12B0593F19B8A0450064C7F7;
+			productRefGroup = 12B0594919B8A0450064C7F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				121951D919ADD06200B4959E /* SALAttributedStringExtentionsExample */,
-				121951FD19ADD06300B4959E /* SALAttributedStringExtentionsExampleTests */,
-				12FE445019B08A6A00318C21 /* SALAttributedStringSpecs */,
+				12B0594719B8A0450064C7F7 /* SALAttributedStringExtentionsExample */,
+				12B0596B19B8A0460064C7F7 /* SALAttributedStringExtentionsExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		121951D819ADD06200B4959E /* Resources */ = {
+		12B0594619B8A0450064C7F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121951F419ADD06300B4959E /* Main_iPad.storyboard in Resources */,
-				121951F919ADD06300B4959E /* Images.xcassets in Resources */,
-				121951F119ADD06300B4959E /* Main_iPhone.storyboard in Resources */,
-				121951E819ADD06300B4959E /* InfoPlist.strings in Resources */,
+				12B0596219B8A0450064C7F7 /* Main_iPad.storyboard in Resources */,
+				12B0596719B8A0460064C7F7 /* Images.xcassets in Resources */,
+				12B0595F19B8A0450064C7F7 /* Main_iPhone.storyboard in Resources */,
+				12B0595619B8A0450064C7F7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		121951FC19ADD06300B4959E /* Resources */ = {
+		12B0596A19B8A0460064C7F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1219520A19ADD06300B4959E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12FE444F19B08A6A00318C21 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12FE445919B08A6B00318C21 /* InfoPlist.strings in Resources */,
+				12B0597819B8A0460064C7F7 /* InfoPlist.strings in Resources */,
+				12B059A319B8A0DA0064C7F7 /* InfoPlist.strings in Resources */,
+				12B059A519B8A0DA0064C7F7 /* SALAttributedStringExtentionsExampleTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		015AD7E6DA154D0C85690D3D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-SALAttributedStringSpecs-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1F2E6B9017C64A79B4A96EB0 /* Check Pods Manifest.lock */ = {
+		00ECF957ED7D44B99DC01D2B /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -461,22 +384,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5825D8CF41714C57B687314D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-SALAttributedStringExtentionsExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D1110826D624C5CB954F0FF /* Copy Pods Resources */ = {
+		204B7D75C7244478A8317915 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,7 +399,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8D50B3F8AFAE47CA825AAB70 /* Check Pods Manifest.lock */ = {
+		B2365B3F73B942DD91B43246 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -506,103 +414,95 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9F9F135A51394B568391C5E7 /* Check Pods Manifest.lock */ = {
+		C71499D1F21F4F09BBAD51B8 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-SALAttributedStringExtentionsExampleTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		121951D619ADD06200B4959E /* Sources */ = {
+		12B0594419B8A0450064C7F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121951F719ADD06300B4959E /* SALViewController.m in Sources */,
-				121951EA19ADD06300B4959E /* main.m in Sources */,
-				12D3172719AF728400B3E5EA /* SALHTMLParser.m in Sources */,
-				12D3172619AF728400B3E5EA /* SALAttributedStringExtensions.m in Sources */,
-				12D3172A19AF728400B3E5EA /* UIImage+SALImageResizeToFit.m in Sources */,
-				12D3172E19AF7D6700B3E5EA /* UIImage+SALGenerateImage.m in Sources */,
-				12D3172819AF728400B3E5EA /* SALImageDownloader.m in Sources */,
-				121951EE19ADD06300B4959E /* SALAppDelegate.m in Sources */,
-				12D3172919AF728400B3E5EA /* SALResizableTextAttachment.m in Sources */,
-				12D3172519AF728400B3E5EA /* NSAttributedString+SALAttributedStringCustomAttributes.m in Sources */,
+				12B059B519B8A24E0064C7F7 /* SALResizableTextAttachment.m in Sources */,
+				12B0596519B8A0460064C7F7 /* CTTViewController.m in Sources */,
+				12B059B219B8A2470064C7F7 /* SALImageDownloader.m in Sources */,
+				12B0595C19B8A0450064C7F7 /* CTTAppDelegate.m in Sources */,
+				12B059B819B8A2540064C7F7 /* UIImage+SALImageResizeToFit.m in Sources */,
+				12B0595819B8A0450064C7F7 /* main.m in Sources */,
+				12B059AF19B8A2400064C7F7 /* SALHTMLParser.m in Sources */,
+				12B059AC19B8A2330064C7F7 /* SALAttributedStringExtensions.m in Sources */,
+				12B059A919B8A22B0064C7F7 /* NSAttributedString+SALAttributedStringCustomAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		121951FA19ADD06300B4959E /* Sources */ = {
+		12B0596819B8A0460064C7F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12FE445F19B08B5300318C21 /* SALAttributedStringExtensionsSpec.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12FE444D19B08A6A00318C21 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				12B059A419B8A0DA0064C7F7 /* SALAttributedStringExtensionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1219520419ADD06300B4959E /* PBXTargetDependency */ = {
+		12B0597219B8A0460064C7F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 121951D919ADD06200B4959E /* SALAttributedStringExtentionsExample */;
-			targetProxy = 1219520319ADD06300B4959E /* PBXContainerItemProxy */;
+			target = 12B0594719B8A0450064C7F7 /* SALAttributedStringExtentionsExample */;
+			targetProxy = 12B0597119B8A0460064C7F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		121951E619ADD06300B4959E /* InfoPlist.strings */ = {
+		12B0595419B8A0450064C7F7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				121951E719ADD06300B4959E /* en */,
+				12B0595519B8A0450064C7F7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		121951EF19ADD06300B4959E /* Main_iPhone.storyboard */ = {
+		12B0595D19B8A0450064C7F7 /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				121951F019ADD06300B4959E /* Base */,
+				12B0595E19B8A0450064C7F7 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		121951F219ADD06300B4959E /* Main_iPad.storyboard */ = {
+		12B0596019B8A0450064C7F7 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				121951F319ADD06300B4959E /* Base */,
+				12B0596119B8A0450064C7F7 /* Base */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		1219520819ADD06300B4959E /* InfoPlist.strings */ = {
+		12B0597619B8A0460064C7F7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1219520919ADD06300B4959E /* en */,
+				12B0597719B8A0460064C7F7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		12FE445719B08A6B00318C21 /* InfoPlist.strings */ = {
+		12B0599D19B8A0DA0064C7F7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				12FE445819B08A6B00318C21 /* en */,
+				12B0599E19B8A0DA0064C7F7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -610,7 +510,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1219520D19ADD06300B4959E /* Debug */ = {
+		12B0597B19B8A0460064C7F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -649,7 +549,7 @@
 			};
 			name = Debug;
 		};
-		1219520E19ADD06300B4959E /* Release */ = {
+		12B0597C19B8A0460064C7F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -682,9 +582,9 @@
 			};
 			name = Release;
 		};
-		1219521019ADD06300B4959E /* Debug */ = {
+		12B0597E19B8A0460064C7F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */;
+			baseConfigurationReference = 3549358E7F0047D5AFE48F31 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -696,9 +596,9 @@
 			};
 			name = Debug;
 		};
-		1219521119ADD06300B4959E /* Release */ = {
+		12B0597F19B8A0460064C7F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC4366DD59804E8F9CF24AC4 /* Pods.xcconfig */;
+			baseConfigurationReference = 3549358E7F0047D5AFE48F31 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -710,8 +610,9 @@
 			};
 			name = Release;
 		};
-		1219521319ADD06300B4959E /* Debug */ = {
+		12B0598119B8A0460064C7F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123FD5A8E3CF42F0AD1607D2 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SALAttributedStringExtentionsExample.app/SALAttributedStringExtentionsExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -732,8 +633,9 @@
 			};
 			name = Debug;
 		};
-		1219521419ADD06300B4959E /* Release */ = {
+		12B0598219B8A0460064C7F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123FD5A8E3CF42F0AD1607D2 /* Pods-SALAttributedStringExtentionsExampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SALAttributedStringExtentionsExample.app/SALAttributedStringExtentionsExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -747,86 +649,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		12FE445B19B08A6B00318C21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SALAttributedStringSpecs/SALAttributedStringSpecs-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "SALAttributedStringSpecs/SALAttributedStringSpecs-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		12FE445C19B08A6B00318C21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SALAttributedStringSpecs/SALAttributedStringSpecs-Prefix.pch";
-				INFOPLIST_FILE = "SALAttributedStringSpecs/SALAttributedStringSpecs-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		121951D519ADD06200B4959E /* Build configuration list for PBXProject "SALAttributedStringExtentionsExample" */ = {
+		12B0594319B8A0450064C7F7 /* Build configuration list for PBXProject "SALAttributedStringExtentionsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1219520D19ADD06300B4959E /* Debug */,
-				1219520E19ADD06300B4959E /* Release */,
+				12B0597B19B8A0460064C7F7 /* Debug */,
+				12B0597C19B8A0460064C7F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1219520F19ADD06300B4959E /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExample" */ = {
+		12B0597D19B8A0460064C7F7 /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1219521019ADD06300B4959E /* Debug */,
-				1219521119ADD06300B4959E /* Release */,
+				12B0597E19B8A0460064C7F7 /* Debug */,
+				12B0597F19B8A0460064C7F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1219521219ADD06300B4959E /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExampleTests" */ = {
+		12B0598019B8A0460064C7F7 /* Build configuration list for PBXNativeTarget "SALAttributedStringExtentionsExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1219521319ADD06300B4959E /* Debug */,
-				1219521419ADD06300B4959E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		12FE445D19B08A6B00318C21 /* Build configuration list for PBXNativeTarget "SALAttributedStringSpecs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12FE445B19B08A6B00318C21 /* Debug */,
-				12FE445C19B08A6B00318C21 /* Release */,
+				12B0598119B8A0460064C7F7 /* Debug */,
+				12B0598219B8A0460064C7F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 121951D219ADD06200B4959E /* Project object */;
+	rootObject = 12B0594019B8A0450064C7F7 /* Project object */;
 }
