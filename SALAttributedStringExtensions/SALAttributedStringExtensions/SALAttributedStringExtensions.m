@@ -38,7 +38,7 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     self.textAttachmentBackgroundColor = textAttachmentBackgroundColor;
     
     //Filtering
-    HTML = [self replaceImgsTagsFromHTML:HTML];
+    HTML = [self filterElementsOnHTML:HTML];
     
     //Only supporting UTF8 encoding
     NSData *HTMLData = [HTML dataUsingEncoding:NSUTF8StringEncoding];
@@ -75,7 +75,28 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     return [self attributedStringFromHTML:HTML limitingImageHeight:0];
 }
 
-- (NSString *)replaceImgsTagsFromHTML:(NSString *)HTML
+- (NSString *)filterElementsOnHTML:(NSString *)HTML
+{
+    HTML = [self replaceIframesTagsForLinksOnHTML:HTML];
+    HTML = [self replaceImgsTagsOnHTML:HTML];
+    
+    return HTML;
+}
+
+- (NSString *)replaceIframesTagsForLinksOnHTML:(NSString *)HTML
+{
+    SALHTMLParser *parser = [[SALHTMLParser alloc] initWithHTML:HTML];
+    
+    return [parser replaceTag:@"iframe" withStringUsingBlock:^(TFHppleElement *htmlElement){
+        
+        NSString *iframeSrc = htmlElement.attributes[@"src"];
+        
+        return [NSString stringWithFormat:@"<a href='%@'>%@</a>", iframeSrc, iframeSrc];
+    }];
+}
+
+
+- (NSString *)replaceImgsTagsOnHTML:(NSString *)HTML
 {
     SALHTMLParser *parser = [[SALHTMLParser alloc] initWithHTML:HTML];
     
