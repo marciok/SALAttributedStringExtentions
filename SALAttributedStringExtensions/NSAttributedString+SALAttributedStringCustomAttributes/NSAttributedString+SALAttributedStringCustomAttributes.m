@@ -13,6 +13,10 @@
 
 - (NSDictionary *)addImagePlaceholder:(UIImage *)imagePlaceholder forImagesURL:(NSArray *)imagesURL limitingTextAttachmentHeight:(CGFloat)textAttachmentHeightLimit withTextAttachmentBackgroundColor:(UIColor *)textAttachmentBackgroundColor
 {
+    if ([imagesURL count] == 0) {
+        return @{@"attributedStringWithPlaceholders" : self, @"imagesRange" : @[]};
+    }
+    
     NSMutableAttributedString *attributedStringWithPlaceholders = [self mutableCopy];
     __block NSUInteger imageURLIndex = 0;
     NSMutableArray *imagesRange = [NSMutableArray array];

@@ -83,6 +83,12 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
         
         NSURL *imageURL = [NSURL URLWithString:htmlElement.attributes[@"src"]];
         
+        if (!imageURL) {
+            NSLog(@"Unable to parse image src, check if url it's malformed");
+            
+            return htmlElement.raw;
+        }
+        
         [self.imagesURL addObject:imageURL];
         
         /**

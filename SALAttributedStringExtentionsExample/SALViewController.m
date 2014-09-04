@@ -35,10 +35,10 @@
     SALAttributedStringExtensions *attributedStringExtended = [[SALAttributedStringExtensions alloc] init];
     attributedStringExtended.delegate = self;
     
-    NSAttributedString *attrString = [attributedStringExtended attributedStringFromHTML:HTML limitingImageHeight:300];
+//    NSAttributedString *attrString = [attributedStringExtended attributedStringFromHTML:HTML limitingImageHeight:300];
     
     self.textView.editable = NO;
-    self.textView.attributedText = attrString;
+//    self.textView.attributedText = attrString;
 }
 
 - (void)didReceiveMemoryWarning
