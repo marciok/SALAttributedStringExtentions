@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CTTAppDelegate.h"
+#import "SALAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([CTTAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([SALAppDelegate class]));
     }
 }
