@@ -10,19 +10,19 @@
 Pod::Spec.new do |s|
   s.name             = "SALAttributedStringExtentions"
   s.version          = "0.1.0"
-  s.summary          = "A short description of SALAttributedStringExtentions."
+  s.summary          = "High performance/optimized convertion from HTML to NSAttributedString"
   s.description      = <<-DESC
-                       An optional longer description of SALAttributedStringExtentions
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Improves NSAttributedString functionalities, starting with the convertion from HTML to attributed string
+* Asynchrounsly download images.
+* Adds placeholder.
+* Auto Resize image to fit in line. 
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SALAttributedStringExtentions"
+  s.homepage         = "https://github.com/SeekingAlpha/SALAttributedStringExtentions"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Marcio Klepacz" => "marcioklepacz@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SALAttributedStringExtentions.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/SeekingAlpha/SALAttributedStringExtentions.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/marciok'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   s.dependency 'hpple', '~> 0.2'
   s.dependency 'SDWebImage', '~> 3.7'
 end
