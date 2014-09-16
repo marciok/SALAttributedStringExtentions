@@ -1,13 +1,17 @@
-SALAttributedStringExtentions
-================================
+# SALAttributedStringExtentions
 
 Improves NSAttributedString functionalities, starting with the convertion from HTML to attributed string
 * Asynchrounsly download images.
 * Adds placeholder.
 * Auto Resize image to fit in line. 
 
-Performance
------------
+
+[![CI Status](http://img.shields.io/travis/Marcio Klepacz/SALAttributedStringExtentions.svg?style=flat)](https://travis-ci.org/Marcio Klepacz/SALAttributedStringExtentions)
+[![Version](https://img.shields.io/cocoapods/v/SALAttributedStringExtentions.svg?style=flat)](http://cocoadocs.org/docsets/SALAttributedStringExtentions)
+[![License](https://img.shields.io/cocoapods/l/SALAttributedStringExtentions.svg?style=flat)](http://cocoadocs.org/docsets/SALAttributedStringExtentions)
+[![Platform](https://img.shields.io/cocoapods/p/SALAttributedStringExtentions.svg?style=flat)](http://cocoadocs.org/docsets/SALAttributedStringExtentions)
+
+## Performance
 
 ###Converting using the default API 
 ![Without](https://s3.amazonaws.com/opensourceprojects/regularsetup.gif "Regular setup")
@@ -15,10 +19,9 @@ Performance
 ###Converting using SALAttributedStringExtentions           
 ![With the extentiosn](https://s3.amazonaws.com/opensourceprojects/withextentions.gif "Regular setup")
 
-## Instalation
-Copy SALAttributedStringExtentions folder into your project.
-
 ## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 Just need to create a new object and set the delegate:
 
@@ -51,21 +54,32 @@ NSAttributedString *attrString = [attributedStringExtended attributedStringFromH
                                 
 //Creating with a custom textAttachment background color
 NSAttributedString *attrString = [attributedStringExtended attributedStringFromHTML:HTML withTextAttachmentBackgroundColor:[UIColor blackColor]];
-```
-                                
+```                                                                
+
+## Requirements
+
+* iOS7 +
+
+## Installation
+
+SALAttributedStringExtentions is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+    pod "SALAttributedStringExtentions"
+    
 ## The horizon
 - [x] Download images asynchonously.
-- [ ] Add to Cocoapod.
+- [x] Add to Cocoapod.
+- [x] Iframe support.
 - [ ] Tap to enlarge images.
-- [ ] Iframe support.
 - [ ] Table support.
 - [ ] Youtube support.
 - [ ] 99% Unit test coverage
 - [ ] Remove third party framewroks dependency.
 - [ ] Recoginize data-image-width,height.
-                                
-## License 
+
+
+## License
+
 SALAttributedStringExtentions is available under the MIT license. See the LICENSE file for more info.
 
-## Credits
-Thanks [@natanrolnik](https://github.com/natanrolnik) for the inspiration.

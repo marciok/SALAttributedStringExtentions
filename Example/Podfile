@@ -1,0 +1,9 @@
+target 'SALAttributedStringExtentions', :exclusive => true do
+  pod "SALAttributedStringExtentions", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "SALAttributedStringExtentions", :path => "../"
+
+  pod 'Kiwi'
+end
