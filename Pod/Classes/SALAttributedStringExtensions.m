@@ -37,8 +37,10 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     self.imageHeightLimit = imageHeightLimit;
     self.textAttachmentBackgroundColor = textAttachmentBackgroundColor;
     
-    //Filtering
+    //Filtering elements that the NSAttributedString parser doesn't know how to handle it.
     HTML = [self filterElementsOnHTML:HTML];
+    //Custom filters, NOTE: Subclass to implement
+    HTML = [self customFiltersHTML:HTML];
     
     //Only supporting UTF8 encoding
     NSData *HTMLData = [HTML dataUsingEncoding:NSUTF8StringEncoding];
@@ -135,6 +137,12 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
         
         [self.delegate textAttachmentDownloaded:resizableTextAttachment inRange:range];
     }];
+}
+
+- (NSString *)customFiltersHTML:(NSString *)HTML
+{
+    // Only returns the HTML on Superclass
+    return HTML;
 }
 
 

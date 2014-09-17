@@ -10,6 +10,7 @@
 		0696868B56B84E7F8C8C67F6 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB719173AB1D453AB87461F8 /* libPods-Tests.a */; };
 		12A593DD19C837D80062FDC0 /* UIImage+SALGenerateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A593DC19C837D80062FDC0 /* UIImage+SALGenerateImage.m */; };
 		12A593DF19C854E70062FDC0 /* SALAttributedStringExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A593DE19C854E70062FDC0 /* SALAttributedStringExtensionsSpec.m */; };
+		12F9F18419C97A00005981FF /* SALMyCustomAttributedStringExtentions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F9F18319C97A00005981FF /* SALMyCustomAttributedStringExtentions.m */; };
 		23A3AE55DADC4F34845C448D /* libPods-SALAttributedStringExtentions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0C4DB4F84F45BC9C8CF59C /* libPods-SALAttributedStringExtentions.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -41,6 +42,8 @@
 		12A593DB19C837D80062FDC0 /* UIImage+SALGenerateImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SALGenerateImage.h"; sourceTree = "<group>"; };
 		12A593DC19C837D80062FDC0 /* UIImage+SALGenerateImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SALGenerateImage.m"; sourceTree = "<group>"; };
 		12A593DE19C854E70062FDC0 /* SALAttributedStringExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALAttributedStringExtensionsSpec.m; sourceTree = "<group>"; };
+		12F9F18219C97A00005981FF /* SALMyCustomAttributedStringExtentions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALMyCustomAttributedStringExtentions.h; sourceTree = "<group>"; };
+		12F9F18319C97A00005981FF /* SALMyCustomAttributedStringExtentions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SALMyCustomAttributedStringExtentions.m; sourceTree = "<group>"; };
 		4F0C4DB4F84F45BC9C8CF59C /* libPods-SALAttributedStringExtentions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SALAttributedStringExtentions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SALAttributedStringExtentions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SALAttributedStringExtentions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -152,6 +155,8 @@
 				6003F5A6195388D20070C39A /* SALViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				12F9F18219C97A00005981FF /* SALMyCustomAttributedStringExtentions.h */,
+				12F9F18319C97A00005981FF /* SALMyCustomAttributedStringExtentions.m */,
 			);
 			path = SALAttributedStringExtentions;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 			files = (
 				6003F59E195388D20070C39A /* SALAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SALViewController.m in Sources */,
+				12F9F18419C97A00005981FF /* SALMyCustomAttributedStringExtentions.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				12A593DD19C837D80062FDC0 /* UIImage+SALGenerateImage.m in Sources */,
 			);
