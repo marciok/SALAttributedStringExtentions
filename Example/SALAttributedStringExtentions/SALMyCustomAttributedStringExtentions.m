@@ -40,6 +40,13 @@ static NSString * const kSALYouTubeHostURL = @"www.youtube.com";
     return HTML;
 }
 
+- (NSAttributedString *)addAttributesToString:(NSMutableAttributedString *)attributedString
+{
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont preferredFontForTextStyle:UIFontTextStyleBody] range:NSMakeRange(0, attributedString.length)];
+
+    return [[NSAttributedString alloc] initWithAttributedString:attributedString];
+}
+
 - (NSString *)replaceBlockquotesTagsForParagraph:(NSString *)HTML
 {
     SALHTMLParser *parser = [[SALHTMLParser alloc] initWithHTML:HTML];
