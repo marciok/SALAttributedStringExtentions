@@ -26,10 +26,10 @@
     NSMutableString *superDuperImgTags = [NSMutableString string];
     
     for (NSUInteger i = 0; i < 50; i++) {
-        [superDuperImgTags appendString:[NSString stringWithFormat:@"<img src='http://fakeimg.pl/500x300/000000/?text=%@' /><h2>Header Level 2</h2> <ol> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li> </ol> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<iframe src='http://www.google.com/'></iframe> Vivamus magna. Cras in mi at  <iframe width='420' height='315' src='http://www.youtube.com/embed/QH2-TGUlwu4' frameborder='0' allowfullscreen></iframe>felis aliquet <table><tr><td>Hi I'm table</td></tr></table> congue. Ut a est eget ligula molestie gravida.<blockquote> Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam.</blockquote> Vivamus pretium ornare est.</p> <h3>Header Level 3</h3> <ul> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li> <li>Aliquam tincidunt mauris eu risus.</li></ul>", [SALViewController randomString:10]]];
+        [superDuperImgTags appendString:[NSString stringWithFormat:@"<h2>Header Level 2</h2><img src='http://fakeimg.pl/500x300/000000/?text=%@' /><ol> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li> </ol> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<iframe src='http://www.google.com/'></iframe> Vivamus magna. Cras in mi at  <iframe width='420' height='315' src='http://www.youtube.com/embed/QH2-TGUlwu4' frameborder='0' allowfullscreen></iframe>felis aliquet <table><tr><td>Hi I'm table</td></tr></table> congue. Ut a est eget ligula molestie gravida.<blockquote> Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam.</blockquote> Vivamus pretium ornare est.</p> <h3>Header Level 3</h3> <ul> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li> <li>Aliquam tincidunt mauris eu risus.</li></ul>", [SALViewController randomString:10]]];
     }
     
-    NSString *HTML = [NSString stringWithFormat:@"<h1>HTML Ipsum Presents</h1>%@", superDuperImgTags];
+    NSString *HTML = [NSString stringWithFormat:@"<h1>SALAttributedStringExtentions Presents</h1>%@", superDuperImgTags];
     
     SALMyCustomAttributedStringExtentions *attributedStringExtended = [[SALMyCustomAttributedStringExtentions alloc] init];
     attributedStringExtended.delegate = self;
