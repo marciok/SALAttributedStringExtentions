@@ -35,6 +35,4 @@
 
 @property (nonatomic, strong) UIColor *textAttachmentBackgroundColor;
 
-@property (nonatomic, copy) NSSet *htmlTagsToReplace;
-
 @end
