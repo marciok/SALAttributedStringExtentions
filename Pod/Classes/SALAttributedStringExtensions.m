@@ -37,9 +37,10 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     self.imageHeightLimit = imageHeightLimit;
     self.textAttachmentBackgroundColor = textAttachmentBackgroundColor;
     
-    //Filtering elements that the NSAttributedString parser doesn't know how to handle it.
+    //Filtering elements that NSAttributedString parser doesn't know how to handle it.
     HTML = [self filterElementsOnHTML:HTML];
-    //Custom filters, NOTE: Subclass to implement
+    
+    //Custom filters, NOTE: Subclass should implement
     HTML = [self customFiltersHTML:HTML];
     
     //Only supporting UTF8 encoding
@@ -48,7 +49,10 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     NSError *parsingError;
     
     //Parsing to NSAttributedString
-    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:HTMLData options:options documentAttributes:nil error:&parsingError];
+    NSMutableAttributedString *attributedStringMutableCopy = [[[NSAttributedString alloc] initWithData:HTMLData options:options documentAttributes:nil error:&parsingError] mutableCopy];
+    
+    //Custom attributes, NOTE: Subclass should implement
+    NSAttributedString *attributedString = [self addAttributesToString:attributedStringMutableCopy];
     
     if (parsingError) {
         NSLog(@"Parsing error %li - %@", (long)parsingError.code, parsingError.userInfo);
@@ -64,7 +68,9 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     
     [self downloadImages];
     
-    return attributedStringAndRanges[@"attributedStringWithPlaceholders"];
+    NSAttributedString *attributedStringFromHTML = attributedStringAndRanges[@"attributedStringWithPlaceholders"];
+    
+    return attributedStringFromHTML;
 }
 
 - (NSAttributedString *)attributedStringFromHTML:(NSString *)HTML limitingImageHeight:(CGFloat)imageHeightLimit
@@ -141,10 +147,12 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
 
 - (NSString *)customFiltersHTML:(NSString *)HTML
 {
-    // Only returns the HTML on Superclass
     return HTML;
 }
 
-
+- (NSAttributedString *)addAttributesToString:(NSMutableAttributedString *)attributedString
+{
+    return [[NSAttributedString alloc] initWithAttributedString:attributedString];
+}
 
 @end
