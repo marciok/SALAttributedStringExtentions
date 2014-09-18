@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SALAttributedStringExtentions"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "High performance/optimized conversion from HTML to NSAttributedString"
   s.description      = <<-DESC
                        Improves NSAttributedString functionalities, starting with the convertion from HTML to attributed string
