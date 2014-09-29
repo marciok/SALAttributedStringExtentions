@@ -23,7 +23,7 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
 
 @implementation SALAttributedStringExtensions
 
-- (NSAttributedString *)attributedStringFromHTML:(NSString *)HTML limitingImageHeight:(CGFloat)imageHeightLimit withTextAttachmentBackgroundColor:(UIColor *)textAttachmentBackgroundColor
+- (NSAttributedString *)attributedStringFromHTML:(NSString *)HTML limitingImageHeight:(CGFloat)imageHeightLimit withTextAttachmentBackgroundColor:(UIColor *)textAttachmentBackgroundColor prependingAttributedString:(NSAttributedString *)prependAttributedString
 {
     /**
      "Since OS X v10.4, NSAttributedString has used WebKit for all import (but not for export) of HTML documents. Because WebKit document loading is not thread safe, this has not been safe to use on background threads.." for more: https://developer.apple.com/library/ios/documentation/cocoa/Conceptual/AttributedStrings/Tasks/CreatingAttributedStrings.html
@@ -50,6 +50,9 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     
     //Parsing to NSAttributedString
     NSMutableAttributedString *attributedStringMutableCopy = [[[NSAttributedString alloc] initWithData:HTMLData options:options documentAttributes:nil error:&parsingError] mutableCopy];
+    if (prependAttributedString) {
+        [attributedStringMutableCopy insertAttributedString:prependAttributedString atIndex:0];
+    }
     
     //Custom attributes, NOTE: Subclass should implement
     NSAttributedString *attributedString = [self addAttributesToString:attributedStringMutableCopy];
@@ -73,6 +76,13 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     return attributedStringFromHTML;
 }
 
+#pragma mark - Converting options
+
+- (NSAttributedString *)attributedStringFromHTML:(NSString *)HTML limitingImageHeight:(CGFloat)imageHeightLimit withTextAttachmentBackgroundColor:(UIColor *)textAttachmentBackgroundColor
+{
+    return [self attributedStringFromHTML:HTML limitingImageHeight:imageHeightLimit withTextAttachmentBackgroundColor:[UIColor whiteColor] prependingAttributedString:nil];
+}
+
 - (NSAttributedString *)attributedStringFromHTML:(NSString *)HTML limitingImageHeight:(CGFloat)imageHeightLimit
 {
     return [self attributedStringFromHTML:HTML limitingImageHeight:imageHeightLimit withTextAttachmentBackgroundColor:[UIColor whiteColor]];
@@ -82,6 +92,8 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
 {
     return [self attributedStringFromHTML:HTML limitingImageHeight:0];
 }
+
+#pragma mark - Filtering HTML
 
 - (NSString *)filterElementsOnHTML:(NSString *)HTML
 {
@@ -144,6 +156,8 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
         [self.delegate textAttachmentDownloaded:resizableTextAttachment inRange:range];
     }];
 }
+
+#pragma mark - Methods for subclassing
 
 - (NSString *)customFiltersHTML:(NSString *)HTML
 {

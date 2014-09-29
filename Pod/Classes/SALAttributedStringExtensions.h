@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class SALResizableTextAttachment;
+#import "SALResizableTextAttachment.h"
 
 @protocol SALAttributedStringDelegate <NSObject>
 
@@ -22,6 +22,8 @@
 @end
 
 @interface SALAttributedStringExtensions : NSObject
+
+- (NSAttributedString *)attributedStringFromHTML:(NSString *)HTML limitingImageHeight:(CGFloat)imageHeightLimit withTextAttachmentBackgroundColor:(UIColor *)textAttachmentBackgroundColor prependingAttributedString:(NSAttributedString *)prependAttributedString;
 
 - (NSAttributedString *)attributedStringFromHTML:(NSString *)HTML limitingImageHeight:(CGFloat)imageHeightLimit withTextAttachmentBackgroundColor:(UIColor *)textAttachmentBackgroundColor;
 
