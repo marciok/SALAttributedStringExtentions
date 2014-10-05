@@ -10,6 +10,6 @@
 
 @interface NSURL (SALAttributedStringExtentionsURLDataDetection)
 
-- (BOOL)isImage;
+- (BOOL)hasImageExtension;
 
 @end

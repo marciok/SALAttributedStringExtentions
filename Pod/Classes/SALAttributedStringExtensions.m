@@ -12,7 +12,7 @@
 #import "SALImageDownloader.h"
 #import "SALImageCache.h"
 #import "SALHTMLParser.h"
-#import "NSURL+SALURLDataDetection.h"
+#import "NSURL+SALAttributedStringExtentionsURLDataDetection.h"
 
 static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourceprojects/onepiximg.png";
 
@@ -170,7 +170,7 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     
         NSURL *url = attrs[@"NSLink"];
         
-        if (![url isImage]) {
+        if (![url hasImageExtension]) {
             return;
         }
         

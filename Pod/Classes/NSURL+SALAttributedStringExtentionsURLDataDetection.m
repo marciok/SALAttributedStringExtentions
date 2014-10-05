@@ -10,7 +10,7 @@
 
 @implementation NSURL (SALAttributedStringExtentionsURLDataDetection)
 
-- (BOOL)isImage
+- (BOOL)hasImageExtension
 {
     NSString *urlString = [self absoluteString];
     NSString *lastPath = [urlString lastPathComponent];
