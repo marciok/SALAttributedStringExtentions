@@ -8,7 +8,7 @@
 
 #import "NSURL+SALURLDataDetection.h"
 
-@implementation NSURL (SALURLDataDetection)
+@implementation NSURL (SALAttributedStringExtentionsURLDataDetection)
 
 - (BOOL)isImage
 {
