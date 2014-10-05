@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
 target 'SALAttributedStringExtentions', :exclusive => true do
   pod "SALAttributedStringExtentions", :path => "../"
 end
