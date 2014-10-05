@@ -6,11 +6,11 @@
 //
 //
 
-#import "NSURL+SALURLDataDetection.h"
+#import "NSURL+SALAttributedStringExtentionsURLDataDetection.h"
 
-@implementation NSURL (SALURLDataDetection)
+@implementation NSURL (SALAttributedStringExtentionsURLDataDetection)
 
-- (BOOL)isImage
+- (BOOL)hasImageExtension
 {
     NSString *urlString = [self absoluteString];
     NSString *lastPath = [urlString lastPathComponent];

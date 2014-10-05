@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSURL (SALURLDataDetection)
+@interface NSURL (SALAttributedStringExtentionsURLDataDetection)
 
-- (BOOL)isImage;
+- (BOOL)hasImageExtension;
 
 @end
