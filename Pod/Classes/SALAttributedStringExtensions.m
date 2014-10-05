@@ -10,7 +10,9 @@
 #import "NSAttributedString+SALAttributedStringCustomAttributes.h"
 #import "SALResizableTextAttachment.h"
 #import "SALImageDownloader.h"
+#import "SALImageCache.h"
 #import "SALHTMLParser.h"
+#import "NSURL+SALURLDataDetection.h"
 
 static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourceprojects/onepiximg.png";
 
@@ -144,16 +146,44 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
 
 - (void)downloadImages
 {
-    [SALImageDownloader downloadImagesFromURL:self.imagesURL withCompletion:^(UIImage *image, NSUInteger imageURLIndex, NSError *error) {
+    [SALImageDownloader downloadImagesFromURL:self.imagesURL withCompletion:^(UIImage *image, NSURL *imageURL, NSUInteger imageURLIndex, NSError *error) {
         
         NSRange range = NSRangeFromString(self.imagesRanges[imageURLIndex]);
         
         SALResizableTextAttachment *resizableTextAttachment = [[SALResizableTextAttachment alloc] init];
         resizableTextAttachment.fitInHeight = self.imageHeightLimit;
         resizableTextAttachment.backgroundColor = self.textAttachmentBackgroundColor;
+        resizableTextAttachment.imageURL = imageURL;
         resizableTextAttachment.image = image;
         
         [self.delegate textAttachmentDownloaded:resizableTextAttachment inRange:range];
+    }];
+}
+
+- (void)fetchDownloadedImagesFromAttributedString:(NSAttributedString *)attributedString
+{
+    [attributedString enumerateAttributesInRange:NSMakeRange(0, attributedString.length) options:NSAttributedStringEnumerationReverse usingBlock:^(NSDictionary *attrs, NSRange range, BOOL *stop) {
+        
+        if (!attrs[@"NSAttachment"] && attrs[@"NSLink"]) {
+            return;
+        }
+    
+        NSURL *url = attrs[@"NSLink"];
+        
+        if (![url isImage]) {
+            return;
+        }
+        
+        [[SALImageCache sharedCache] queryImageForKey:[url absoluteString] withCompletion:^(UIImage *image) {
+            
+            SALResizableTextAttachment *resizableTextAttachment = [[SALResizableTextAttachment alloc] init];
+            resizableTextAttachment.fitInHeight = self.imageHeightLimit;
+            resizableTextAttachment.backgroundColor = self.textAttachmentBackgroundColor;
+            resizableTextAttachment.imageURL = url;
+            resizableTextAttachment.image = image;
+            
+            [self.delegate textAttachmentDownloaded:resizableTextAttachment inRange:range];
+        }];
     }];
 }
 

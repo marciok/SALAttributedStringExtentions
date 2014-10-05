@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SALImageDownloader : NSObject
+@interface SALImageCache : NSObject
 
-+ (void)downloadImagesFromURL:(NSArray *)imagesURL withCompletion:(void (^)(UIImage *image, NSURL *imageURL, NSUInteger imageURLIndex, NSError *error))completionBlock;
++ (instancetype)sharedCache; 
+
+- (void)queryImageForKey:(NSString *)key withCompletion:(void (^)(UIImage *image))imageQueryCompletionBlock;
 
 @end

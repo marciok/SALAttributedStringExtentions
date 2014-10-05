@@ -11,7 +11,7 @@
 @interface SALResizableTextAttachment : NSTextAttachment
 
 @property (nonatomic, assign) CGFloat fitInHeight;
-
 @property (nonatomic, strong) UIColor *backgroundColor;
+@property (nonatomic, strong) NSURL *imageURL;
 
 @end

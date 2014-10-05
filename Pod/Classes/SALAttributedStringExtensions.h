@@ -31,6 +31,8 @@
 
 - (NSAttributedString *)attributedStringFromHTML:(NSString *)HTML;
 
+- (void)fetchDownloadedImagesFromAttributedString:(NSAttributedString *)attributedString;
+
 @property (nonatomic, weak) id <SALAttributedStringDelegate> delegate;
 
 @property (nonatomic, assign) CGFloat imageHeightLimit;

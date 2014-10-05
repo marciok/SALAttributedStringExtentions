@@ -11,7 +11,7 @@
 
 @implementation SALImageDownloader
 
-+ (void)downloadImagesFromURL:(NSArray *)imagesURL withCompletion:(void (^)(UIImage *image, NSUInteger imageURLIndex,  NSError *error))completionBlock
++ (void)downloadImagesFromURL:(NSArray *)imagesURL withCompletion:(void (^)(UIImage *image, NSURL *imageURL, NSUInteger imageURLIndex,  NSError *error))completionBlock
 {
     for (NSUInteger i = 0; i < [imagesURL count]; i++) {
         [[SDWebImageManager sharedManager] downloadImageWithURL:imagesURL[i] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
@@ -19,7 +19,7 @@
             //Note: They are stored in disk.
             //TODO: Allow options on the image downloader.
             if (completionBlock) {
-                completionBlock(image, i, error);
+                completionBlock(image, imagesURL[i], i, error);
             }
         }];
     }
