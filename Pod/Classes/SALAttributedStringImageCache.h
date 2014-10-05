@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SALImageCache : NSObject
+@interface SALAttributedStringImageCache : NSObject
 
 + (instancetype)sharedCache; 
 

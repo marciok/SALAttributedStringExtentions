@@ -6,22 +6,22 @@
 //  Copyright (c) 2014 Seeking Alpha. All rights reserved.
 //
 
-#import "SALImageCache.h"
+#import "SALAttributedStringImageCache.h"
 #import <SDWebImage/SDImageCache.h>
 
 static NSString *const SALSharedCacheNamespace = @"sharedCache";
 
-@interface SALImageCache ()
+@interface SALAttributedStringImageCache ()
 
 @property (nonatomic, strong) SDImageCache *sdImageCache;
 
 @end
 
-@implementation SALImageCache
+@implementation SALAttributedStringImageCache
 
 + (instancetype)sharedCache
 {
-    static SALImageCache *_sharedCache = nil;
+    static SALAttributedStringImageCache *_sharedCache = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedCache = [[self alloc] initWithCacheName:SALSharedCacheNamespace];

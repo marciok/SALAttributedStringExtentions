@@ -10,7 +10,7 @@
 #import "NSAttributedString+SALAttributedStringCustomAttributes.h"
 #import "SALResizableTextAttachment.h"
 #import "SALImageDownloader.h"
-#import "SALImageCache.h"
+#import "SALAttributedStringImageCache.h"
 #import "SALHTMLParser.h"
 #import "NSURL+SALAttributedStringExtentionsURLDataDetection.h"
 
@@ -174,7 +174,7 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
             return;
         }
         
-        [[SALImageCache sharedCache] queryImageForKey:[url absoluteString] withCompletion:^(UIImage *image) {
+        [[SALAttributedStringImageCache sharedCache] queryImageForKey:[url absoluteString] withCompletion:^(UIImage *image) {
             
             SALResizableTextAttachment *resizableTextAttachment = [[SALResizableTextAttachment alloc] init];
             resizableTextAttachment.fitInHeight = self.imageHeightLimit;
