@@ -6,7 +6,7 @@
 //
 //
 
-#import "NSURL+SALURLDataDetection.h"
+#import "NSURL+SALAttributedStringExtentionsURLDataDetection.h"
 
 @implementation NSURL (SALAttributedStringExtentionsURLDataDetection)
 
