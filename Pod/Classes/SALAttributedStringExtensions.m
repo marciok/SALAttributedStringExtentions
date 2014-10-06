@@ -157,6 +157,8 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
         resizableTextAttachment.image = image;
         
         [self.delegate textAttachmentDownloaded:resizableTextAttachment inRange:range];
+        
+        [[SALAttributedStringImageCache sharedCache] storeImage:image forKey:[imageURL absoluteString]];
     }];
 }
 

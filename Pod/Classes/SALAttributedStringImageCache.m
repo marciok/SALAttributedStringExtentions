@@ -43,6 +43,12 @@ static NSString *const SALSharedCacheNamespace = @"sharedCache";
     return self;
 }
 
+
+- (void)storeImage:(UIImage *)image forKey:(NSString *)key
+{
+    [self.sdImageCache storeImage:image forKey:key];
+}
+
 - (void)queryImageForKey:(NSString *)key withCompletion:(void(^)(UIImage *image))imageQueryCompletionBlock
 {
     if (!imageQueryCompletionBlock) {
