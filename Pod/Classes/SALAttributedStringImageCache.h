@@ -14,4 +14,6 @@
 
 - (void)queryImageForKey:(NSString *)key withCompletion:(void (^)(UIImage *image))imageQueryCompletionBlock;
 
+- (void)storeImage:(UIImage *)image forKey:(NSString *)key;
+
 @end
