@@ -33,6 +33,9 @@
 
 - (void)fetchDownloadedImagesFromAttributedString:(NSAttributedString *)attributedString;
 
+//you need to call downloadImages **AFTER** setting the attributed string as attributedText
+- (void)downloadImages;
+
 @property (nonatomic, weak) id <SALAttributedStringDelegate> delegate;
 
 @property (nonatomic, assign) CGFloat imageHeightLimit;
