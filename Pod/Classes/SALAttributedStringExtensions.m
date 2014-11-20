@@ -71,8 +71,6 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     
     self.imagesRanges = attributedStringAndRanges[@"imagesRange"];
     
-    [self downloadImages];
-    
     NSAttributedString *attributedStringFromHTML = attributedStringAndRanges[@"attributedStringWithPlaceholders"];
     
     return attributedStringFromHTML;
