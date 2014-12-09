@@ -39,11 +39,11 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     self.imageHeightLimit = imageHeightLimit;
     self.textAttachmentBackgroundColor = textAttachmentBackgroundColor;
     
-    //Filtering elements that NSAttributedString parser doesn't know how to handle it.
-    HTML = [self filterElementsOnHTML:HTML];
-    
     //Custom filters, NOTE: Subclass should implement
     HTML = [self customFiltersHTML:HTML];
+    
+    //Filtering elements that NSAttributedString parser doesn't know how to handle it.
+    HTML = [self filterElementsOnHTML:HTML];
     
     //Only supporting UTF8 encoding
     NSData *HTMLData = [HTML dataUsingEncoding:NSUTF8StringEncoding];
