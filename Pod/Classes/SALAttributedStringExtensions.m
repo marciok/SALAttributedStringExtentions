@@ -146,6 +146,10 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
 {
     [SALImageDownloader downloadImagesFromURL:self.imagesURL withCompletion:^(UIImage *image, NSURL *imageURL, NSUInteger imageURLIndex, NSError *error) {
         
+        if (imageURLIndex >= self.imagesRanges.count) {
+            return;
+        }
+        
         NSRange range = NSRangeFromString(self.imagesRanges[imageURLIndex]);
         
         SALResizableTextAttachment *resizableTextAttachment = [[SALResizableTextAttachment alloc] init];
