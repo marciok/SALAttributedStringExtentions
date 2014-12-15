@@ -14,7 +14,7 @@
 #import "SALHTMLParser.h"
 #import "NSURL+SALAttributedStringExtentionsURLDataDetection.h"
 
-static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourceprojects/onepiximg.png";
+static NSString * const SALDummyImgURL = @"http://s3.amazonaws.com/opensourceprojects/onepiximg.png";
 
 @interface SALAttributedStringExtensions ()
 
@@ -95,8 +95,10 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
 
 #pragma mark - Filtering HTML
 
-- (NSString *)filterElementsOnHTML:(NSString *)HTML
+- (NSString *)filterElementsOnHTML:(NSString *)htmlToTreat
 {
+    NSString *HTML = [htmlToTreat copy];
+    
     HTML = [self replaceIframesTagsForLinksOnHTML:HTML];
     HTML = [self replaceImgsTagsOnHTML:HTML];
     
@@ -122,12 +124,16 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
     
     return [parser replaceTag:@"img" withStringUsingBlock:^(TFHppleElement *htmlElement){
         
-        NSURL *imageURL = [NSURL URLWithString:htmlElement.attributes[@"src"]];
+        NSString *rawURL = htmlElement.attributes[@"src"];
+
+        NSURL *imageURL = [NSURL URLWithString:rawURL];
         
         if (!imageURL) {
-            NSLog(@"Unable to parse image src, check if url it's malformed");
-            
-            return htmlElement.raw;
+            imageURL = [NSURL URLWithString:[rawURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        }
+        
+        if (!imageURL) {
+            imageURL = [NSURL URLWithString:@"http://placehold.it/300&text=Error+loading+image"];
         }
         
         [self.imagesURL addObject:imageURL];
@@ -138,7 +144,7 @@ static NSString * const kSALDummyImgURL = @"http://s3.amazonaws.com/opensourcepr
          So a 1px image it's downloaded, at least it is cached :/
          **/
         
-        return [NSString stringWithFormat:@"<img src='%@' />", kSALDummyImgURL];
+        return [NSString stringWithFormat:@"<img src='%@' />", SALDummyImgURL];
     }];
 }
 
